@@ -162,3 +162,60 @@ def get_student_counselling_cases(student: Student = Depends(require_student), d
         out.student_name = student.name
         res.append(out)
     return res
+
+
+# --- Per-Subject Detailed Attendance Records ---
+@router.get("/subjects/{subject_id}/records")
+def get_student_subject_records(
+    subject_id: int,
+    student: Student = Depends(require_student),
+    db: Session = Depends(get_db)
+):
+    subject = db.query(Subject).filter(Subject.id == subject_id).first()
+    if not subject:
+        raise HTTPException(status_code=404, detail="Subject not found")
+
+    records = (
+        db.query(Attendance)
+        .filter(Attendance.student_id == student.id, Attendance.subject_id == subject_id)
+        .order_by(Attendance.date.desc(), Attendance.period.desc())
+        .all()
+    )
+
+    total = len(records)
+    present_records = []
+    absent_records = []
+
+    for r in records:
+        dt = datetime.strptime(r.date, "%Y-%m-%d") if isinstance(r.date, str) else r.date
+        status_val = r.status.value if hasattr(r.status, "value") else str(r.status)
+        item = {
+            "id": r.id,
+            "date": r.date,
+            "day_of_week": dt.strftime("%A"),
+            "formatted_date": dt.strftime("%b %d, %Y"),
+            "period": r.period,
+            "status": status_val
+        }
+        if status_val == "present":
+            present_records.append(item)
+        else:
+            absent_records.append(item)
+
+    attended = len(present_records)
+    pct = round((attended / total * 100.0), 1) if total > 0 else 100.0
+
+    return {
+        "subject": {
+            "id": subject.id,
+            "name": subject.name,
+            "code": subject.code,
+            "overall_pct": pct,
+            "total_classes": total,
+            "attended_classes": attended,
+            "absent_classes": len(absent_records)
+        },
+        "present_classes": present_records,
+        "absent_classes": absent_records
+    }
+

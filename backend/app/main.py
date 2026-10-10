@@ -51,6 +51,15 @@ app.include_router(analytics.router)
 app.include_router(chatbot.router)
 
 
+@app.get("/", tags=["meta"])
+def root():
+    return {
+        "name": "Attend Lens - Academic Attendance Analyzer API",
+        "status": "online",
+        "docs_url": "/docs"
+    }
+
+
 @app.get("/health", tags=["meta"])
 def health():
     return {"status": "ok", "app": "Rollcall AI Attendance Pattern Analyzer"}

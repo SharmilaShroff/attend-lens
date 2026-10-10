@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import api from "../../api/client";
 import Navbar from "../../components/Navbar";
 import AIChatbotWidget from "../../components/AIChatbotWidget";
 import {
-  TrendingUp, TrendingDown, Calculator, MessageSquare
+  TrendingUp, TrendingDown, Calculator, MessageSquare, BookOpen
 } from "lucide-react";
 import {
   BarChart, Bar, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine, LabelList
@@ -21,6 +22,7 @@ const SUBJECT_BAR_COLORS = [
 ];
 
 export default function StudentDashboard() {
+  const navigate = useNavigate();
   const [data, setData] = useState(null);
   const [selectedSubjectId, setSelectedSubjectId] = useState(null);
   const [reasons, setReasons] = useState([]);
@@ -218,6 +220,25 @@ export default function StudentDashboard() {
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
+            </div>
+
+            {/* Subject Buttons directly below the graph */}
+            <div className="pt-3 border-t border-gray-100 space-y-1.5">
+              <span className="text-[10px] font-bold text-gray-500 uppercase tracking-wider block">
+                View Subject Attendance Records
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {subjects.map((subj) => (
+                  <button
+                    key={subj.subject_id}
+                    onClick={() => navigate(`/student/subject/${subj.subject_id}`)}
+                    className="bg-[#f4f8f5] text-[#143628] hover:bg-[#e8f5e9] border border-[#1e4d3b]/20 px-3.5 py-2 rounded-2xl text-xs font-bold transition-all shadow-sm flex items-center gap-1.5"
+                  >
+                    <BookOpen className="w-3.5 h-3.5 text-[#1e4d3b]" />
+                    <span>{subj.subject_name}</span>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 

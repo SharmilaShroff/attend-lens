@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import MentorDashboard from "./pages/staff/MentorDashboard";
 import TeacherDashboard from "./pages/staff/TeacherDashboard";
 import StudentDashboard from "./pages/student/StudentDashboard";
+import StudentSubjectDetail from "./pages/student/StudentSubjectDetail";
 import StudentProfile from "./pages/staff/StudentProfile";
 import SubjectMonthlyTrend from "./pages/staff/SubjectMonthlyTrend";
 import StudentRemarksHistory from "./pages/staff/StudentRemarksHistory";
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/" element={<RolePicker />} />
         <Route path="/login" element={<Login />} />
         <Route path="/staff/*" element={<AuthenticatedLayout><StaffDispatcher /></AuthenticatedLayout>} />
+        <Route path="/student/subject/:subjectId" element={<AuthenticatedLayout><StudentSubjectDetail /></AuthenticatedLayout>} />
         <Route path="/student-profile/:id/subject/:subjectId" element={<AuthenticatedLayout><SubjectMonthlyTrend /></AuthenticatedLayout>} />
         <Route path="/student/:id/subject/:subjectId" element={<AuthenticatedLayout><SubjectMonthlyTrend /></AuthenticatedLayout>} />
         <Route path="/student-profile/:id/remarks" element={<AuthenticatedLayout><StudentRemarksHistory /></AuthenticatedLayout>} />
