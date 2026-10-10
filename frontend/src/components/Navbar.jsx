@@ -1,6 +1,6 @@
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import { LogOut, Bell } from "lucide-react";
+import { LogOut } from "lucide-react";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -24,16 +24,7 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center gap-4">
-        <button
-          onClick={() => alert("All AI Risk Alerts are up to date!")}
-          className="w-9 h-9 rounded-full bg-[#f4f8f5] hover:bg-[#e8f5e9] flex items-center justify-center text-[#1e4d3b] transition-colors relative"
-          title="Notifications"
-        >
-          <Bell className="w-4 h-4" />
-          <span className="w-2 h-2 rounded-full bg-red-500 absolute top-2 right-2 ring-2 ring-white"></span>
-        </button>
-
-        <div className="flex items-center gap-3 border-l border-gray-200 pl-4">
+        <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full bg-[#1e4d3b] text-white flex items-center justify-center font-bold text-sm">
             {user?.name ? user.name.slice(0, 2).toUpperCase() : "U"}
           </div>

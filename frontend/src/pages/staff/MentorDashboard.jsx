@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../api/client";
 import Navbar from "../../components/Navbar";
+import { ATTENDANCE_CONFIG } from "../../config";
 import {
   Users,
   BookOpen,
@@ -177,14 +178,14 @@ export default function MentorDashboard() {
         overallPct: Number(overallPct.toFixed(1)),
         subjectName: subjectNames.length > 0 ? subjectNames.join(", ") : "All Subjects",
         detectedPattern: patterns.length > 0 ? patterns.join(", ") : "Normal Attendance",
-        hasAlert: studentAlerts.length > 0,
-        isSemesterDrop: overallPct < 75.0 || (pred ? pred.predicted_probability_drop > 0.35 : false)
+        isAlert: overallPct < ATTENDANCE_CONFIG.ACTIVE_ALERTS_THRESHOLD,
+        isSemesterDrop: overallPct < ATTENDANCE_CONFIG.SEMESTER_DROP_THRESHOLD
       };
     });
   }, [students, alerts, predictions]);
 
   // Live Count Calculations
-  const activeAlertsCount = useMemo(() => processedStudentList.filter((s) => s.hasAlert).length, [processedStudentList]);
+  const activeAlertsCount = useMemo(() => processedStudentList.filter((s) => s.isAlert).length, [processedStudentList]);
   const semesterDropCount = useMemo(() => processedStudentList.filter((s) => s.isSemesterDrop).length, [processedStudentList]);
 
   // Unified Filtering Pipeline (Card Selection + Search + Sort + Attendance Threshold Filter)
@@ -193,7 +194,7 @@ export default function MentorDashboard() {
 
     // 1. Apply Card Selection Filter
     if (cardFilter === "alerts") {
-      result = result.filter((s) => s.hasAlert);
+      result = result.filter((s) => s.isAlert);
     } else if (cardFilter === "drop") {
       result = result.filter((s) => s.isSemesterDrop);
     }
@@ -477,7 +478,9 @@ export default function MentorDashboard() {
                 {filteredStudents.length === 0 && (
                   <tr>
                     <td colSpan="5" className="p-8 text-center text-gray-400 font-medium">
-                      No students match the selected search or filter criteria.
+                      {cardFilter === "alerts" || cardFilter === "drop"
+                        ? "Not applicable"
+                        : "No students match the selected search or filter criteria."}
                     </td>
                   </tr>
                 )}

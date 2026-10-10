@@ -56,9 +56,17 @@ export default function StudentDashboard() {
       if (dbData.student?.id) {
         try {
           const { data: rems } = await api.get(`/remarks/student/${dbData.student.id}`);
-          setMentorRemarks(rems || []);
+          const validRemarks = (rems || []).filter(
+            (r) => (!r.text || !r.text.includes("Counselling Summary"))
+          );
+          setMentorRemarks(validRemarks);
         } catch (e) {
-          console.error("Failed to fetch mentor remarks for student:", e);
+          try {
+            const { data: rems } = await api.get("/remarks/my-remarks");
+            setMentorRemarks(rems || []);
+          } catch (err) {
+            console.error("Failed to fetch mentor remarks for student:", err);
+          }
         }
       }
     } catch (err) {
@@ -70,6 +78,10 @@ export default function StudentDashboard() {
 
   useEffect(() => {
     loadStudentData();
+    const interval = setInterval(() => {
+      loadStudentData();
+    }, 30000);
+    return () => clearInterval(interval);
   }, []);
 
   const handleSubmitReason = async (e) => {
@@ -175,15 +187,15 @@ export default function StudentDashboard() {
           </div>
         </div>
 
-        {/* Mentor Feedback & Remarks Card */}
-        {mentorRemarks.length > 0 && (
-          <div className="bg-white p-6 rounded-3xl border border-[#1e4d3b]/10 shadow-sm space-y-3">
-            <div className="flex items-center gap-2">
-              <MessageSquare className="w-5 h-5 text-[#1e4d3b]" />
-              <h3 className="text-base font-extrabold text-[#143628]">Mentor Feedback & Remarks</h3>
-            </div>
-            <div className="space-y-2.5">
-              {mentorRemarks.slice(0, 3).map((rem) => (
+        {/* Mentor Remarks Card */}
+        <div className="bg-white p-6 rounded-3xl border border-[#1e4d3b]/10 shadow-sm space-y-3">
+          <div className="flex items-center gap-2">
+            <MessageSquare className="w-5 h-5 text-[#1e4d3b]" />
+            <h3 className="text-base font-extrabold text-[#143628]">Mentor Remarks</h3>
+          </div>
+          {mentorRemarks.length > 0 ? (
+            <div className="space-y-2.5 max-h-[160px] overflow-y-auto pr-1">
+              {mentorRemarks.map((rem) => (
                 <div key={rem.id} className="p-3.5 rounded-2xl bg-[#f4f8f5] border border-[#1e4d3b]/10 space-y-1 text-xs">
                   <div className="flex items-center justify-between text-[10px] text-gray-500">
                     <span className="font-bold text-[#143628]">{rem.author_name || "Mentor"}</span>
@@ -193,8 +205,12 @@ export default function StudentDashboard() {
                 </div>
               ))}
             </div>
-          </div>
-        )}
+          ) : (
+            <div className="p-4 rounded-2xl bg-[#f4f8f5] border border-[#1e4d3b]/10 text-xs text-gray-500 font-medium text-center">
+              No remarks yet.
+            </div>
+          )}
+        </div>
 
         {/* Overall Attendance Bar Graph & Classes Needed Calculator */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
