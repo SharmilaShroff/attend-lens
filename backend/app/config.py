@@ -31,6 +31,7 @@ class Settings(BaseSettings):
     GMAIL_USER: str = ""
     GMAIL_APP_PASSWORD: str = ""
     EMAIL_FROM_NAME: str = "Attend Lens"
+    N8N_WEBHOOK_URL: str = ""
 
     EMAIL_AUTOMATION_ENABLED: bool = True
     EMAIL_DRY_RUN: bool = False

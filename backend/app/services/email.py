@@ -1,5 +1,8 @@
 import smtplib
 import re
+import json
+import urllib.request
+from datetime import datetime
 from typing import Optional
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -17,9 +20,34 @@ def validate_email(email_str: str) -> bool:
     return bool(re.match(pattern, email_str))
 
 
+def send_n8n_webhook(payload: dict) -> bool:
+    """
+    Posts email automation payload to an n8n webhook URL.
+    Returns True if n8n responds with HTTP 200/201/202.
+    """
+    url = getattr(settings, "N8N_WEBHOOK_URL", "").strip()
+    if not url:
+        return False
+
+    try:
+        data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(
+            url,
+            data=data,
+            headers={"Content-Type": "application/json", "User-Agent": "AttendLens-Backend"}
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            status_code = resp.getcode()
+            print(f"[N8N WEBHOOK] Successfully posted email payload to n8n ({url}) -> HTTP {status_code}")
+            return status_code in (200, 201, 202)
+    except Exception as e:
+        print(f"[N8N WEBHOOK ERROR] Failed to post email payload to n8n ({url}): {e}")
+        return False
+
+
 def send_email(to_email: str, subject: str, body: str, html_body: Optional[str] = None) -> bool:
     """
-    Sends an email using Gmail SMTP or standard SMTP.
+    Sends an email using n8n webhook, Gmail SMTP, or standard SMTP.
     If EMAIL_DRY_RUN=True or credentials are not configured, it safely logs the email instead.
     """
     if not validate_email(to_email):
@@ -29,6 +57,20 @@ def send_email(to_email: str, subject: str, body: str, html_body: Optional[str] 
     gmail_user = getattr(settings, "GMAIL_USER", "").strip()
     gmail_pass = getattr(settings, "GMAIL_APP_PASSWORD", "").replace(" ", "").strip()
     from_name = getattr(settings, "EMAIL_FROM_NAME", "Attend Lens")
+    n8n_url = getattr(settings, "N8N_WEBHOOK_URL", "").strip()
+
+    # 1. Check n8n Webhook Workflow Integration
+    if n8n_url:
+        payload = {
+            "to_email": to_email,
+            "subject": subject,
+            "body": body,
+            "html_body": html_body,
+            "from_name": from_name,
+            "timestamp": datetime.now().isoformat()
+        }
+        if send_n8n_webhook(payload):
+            return True
 
     smtp_host = settings.SMTP_HOST
     smtp_port = settings.SMTP_PORT or 587
@@ -88,7 +130,15 @@ def send_email(to_email: str, subject: str, body: str, html_body: Optional[str] 
                     server.starttls()
                     server.ehlo()
 
-                server.login(auth_user, auth_pass)
+                # Attempt authentication using AUTH PLAIN explicitly or standard login
+                try:
+                    server.login(auth_user, auth_pass)
+                except (smtplib.SMTPAuthenticationError, smtplib.SMTPServerDisconnected) as auth_err:
+                    print(f"[GMAIL AUTH REJECTED] Google rejected credentials for '{auth_user}': {auth_err}")
+                    print("--> Please ensure 2-Step Verification is ON at https://myaccount.google.com/security")
+                    print("--> And generate a fresh 16-char App Password at https://myaccount.google.com/apppasswords")
+                    raise auth_err
+
                 server.sendmail(sender_email, to_email, msg.as_string())
                 server.quit()
                 server_sent = True
@@ -99,10 +149,7 @@ def send_email(to_email: str, subject: str, body: str, html_body: Optional[str] 
 
         if not server_sent:
             err_str = str(last_exception)
-            if "535" in err_str or "BadCredentials" in err_str:
-                print(f"[EMAIL ERROR] Gmail rejected credentials for {gmail_user} (535 BadCredentials). Please generate a fresh 16-char App Password at https://myaccount.google.com/apppasswords")
-            else:
-                print(f"[EMAIL WARN] SMTP send attempt failed ({last_exception}). Falling back to safe logging.")
+            print(f"[EMAIL WARN] SMTP send attempt failed ({last_exception}). Falling back to safe logging.")
             print(f"To: {to_email} | Subject: {subject}\n--- BODY ---\n{body[:200]}...\n")
             return False
 
