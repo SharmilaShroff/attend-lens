@@ -4,7 +4,7 @@ import api from "../../api/client";
 import Navbar from "../../components/Navbar";
 import AIChatbotWidget from "../../components/AIChatbotWidget";
 import {
-  TrendingUp, TrendingDown, Calculator, MessageSquare, BookOpen
+  TrendingUp, TrendingDown, Calculator, MessageSquare, BookOpen, Sparkles, Send, RefreshCw, ShieldAlert
 } from "lucide-react";
 import {
   BarChart, Bar, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine, LabelList
@@ -91,14 +91,33 @@ export default function StudentDashboard() {
     }
   };
 
+  const [sendingReply, setSendingReply] = useState(false);
+
   const handleReplyCounselling = async (caseId) => {
-    if (!replyText.trim()) return;
+    if (!replyText.trim() || sendingReply) return;
+    setSendingReply(true);
     try {
-      await api.post(`/counselling/cases/${caseId}/reply`, { body: replyText });
+      await api.post(`/counselling/cases/${caseId}/reply`, { body: replyText.trim() });
       setReplyText("");
-      loadStudentData();
+      await loadStudentData();
     } catch (err) {
       alert("Failed to send reply");
+    } finally {
+      setSendingReply(false);
+    }
+  };
+
+  const handleStartCheckIn = async () => {
+    try {
+      await api.post("/student/absence-reasons", {
+        subject_id: selectedSubjectId,
+        date: new Date().toISOString().split("T")[0],
+        category: "personal",
+        reason: "Requesting academic and attendance guidance from the AI counselling team."
+      });
+      await loadStudentData();
+    } catch (err) {
+      alert("Failed to initiate counselling check-in");
     }
   };
 
@@ -397,48 +416,110 @@ export default function StudentDashboard() {
         </div>
 
         {/* AI Counselling Inbox */}
-        {counsellingCases.length > 0 && (
-          <div className="bg-white p-6 rounded-3xl border border-[#1e4d3b]/10 shadow-sm space-y-4">
+        <div id="counselling" className="bg-white p-6 rounded-3xl border border-[#1e4d3b]/10 shadow-sm space-y-4">
+          <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <MessageSquare className="w-5 h-5 text-[#1e4d3b]" />
               <h3 className="text-base font-extrabold text-[#143628]">AI Counselling Inbox</h3>
             </div>
+            <span className="text-[10px] font-bold text-emerald-800 bg-[#e8f5e9] px-3 py-1 rounded-full border border-emerald-300 flex items-center gap-1">
+              <Sparkles className="w-3.5 h-3.5" /> ML Pattern Engine Active
+            </span>
+          </div>
 
-            {counsellingCases.map((c) => (
+          {counsellingCases.length > 0 ? (
+            counsellingCases.map((c) => (
               <div key={c.id} className="p-5 rounded-2xl bg-[#f4f8f5] border border-[#1e4d3b]/10 space-y-4">
                 <div className="flex items-center justify-between border-b border-gray-200 pb-2">
-                  <span className="text-xs font-bold text-[#143628]">Thread Status: {c.status}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-[#143628]">Thread Status: {c.status}</span>
+                    <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+                      c.status === "responded" ? "bg-emerald-100 text-emerald-800" : "bg-amber-100 text-amber-800"
+                    }`}>
+                      {c.status.toUpperCase()}
+                    </span>
+                  </div>
                   <span className="text-[10px] text-gray-500">Ref: {c.thread_token}</span>
                 </div>
 
+                {/* Conversation Thread Stream */}
                 <div className="space-y-3">
-                  {c.messages?.map((m) => (
-                    <div key={m.id} className={`p-3.5 rounded-2xl text-xs ${m.sender === "student" ? "bg-[#1e4d3b] text-white ml-8" : "bg-white text-gray-800 border border-gray-200 mr-8"}`}>
-                      <div className="font-bold text-[10px] opacity-75 mb-1">{m.sender.toUpperCase()} ({m.channel})</div>
-                      <div>{m.body}</div>
-                    </div>
-                  ))}
+                  {c.messages?.map((m) => {
+                    const isStudent = m.sender === "student";
+                    const isAi = m.sender === "ai";
+                    return (
+                      <div
+                        key={m.id}
+                        className={`p-4 rounded-2xl text-xs space-y-1 ${
+                          isStudent
+                            ? "bg-[#1e4d3b] text-white ml-8 shadow-sm"
+                            : "bg-white text-gray-800 border border-gray-200 mr-8 shadow-sm"
+                        }`}
+                      >
+                        <div className="flex items-center justify-between text-[10px] opacity-80 font-bold mb-1">
+                          <span className="flex items-center gap-1">
+                            {isAi && <Sparkles className="w-3 h-3 text-[#1e4d3b]" />}
+                            {isStudent ? "YOU (STUDENT)" : isAi ? "AI COUNSELLOR (ML POWERED)" : "MENTOR / STAFF"}
+                          </span>
+                          <span>{new Date(m.created_at).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
+                        </div>
+                        <div className="whitespace-pre-line leading-relaxed font-medium">{m.body}</div>
+                      </div>
+                    );
+                  })}
                 </div>
 
+                {/* Interactive Reply Input with Real-time ML Inference */}
                 <div className="flex gap-2 pt-2">
                   <input
                     type="text"
                     value={replyText}
                     onChange={(e) => setReplyText(e.target.value)}
-                    placeholder="Type your response to the counselling team..."
-                    className="flex-1 text-xs p-3 rounded-xl bg-white border border-gray-200 outline-none"
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && !e.shiftKey) {
+                        e.preventDefault();
+                        handleReplyCounselling(c.id);
+                      }
+                    }}
+                    placeholder="Type a response to the counselling team (e.g. explain your situation, request help)..."
+                    disabled={sendingReply}
+                    className="flex-1 text-xs p-3.5 rounded-2xl bg-white border border-gray-200 outline-none focus:border-[#1e4d3b] focus:ring-1 focus:ring-[#1e4d3b]"
                   />
                   <button
                     onClick={() => handleReplyCounselling(c.id)}
-                    className="bg-[#1e4d3b] text-white text-xs font-bold px-5 py-3 rounded-xl"
+                    disabled={sendingReply || !replyText.trim()}
+                    className="bg-[#1e4d3b] text-white text-xs font-bold px-5 py-3 rounded-2xl hover:bg-[#143628] transition-all flex items-center gap-1.5 shadow-sm disabled:opacity-50"
                   >
-                    Reply
+                    {sendingReply ? (
+                      <>
+                        <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                        <span>Analyzing...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-3.5 h-3.5" />
+                        <span>Reply</span>
+                      </>
+                    )}
                   </button>
                 </div>
               </div>
-            ))}
-          </div>
-        )}
+            ))
+          ) : (
+            <div className="p-8 rounded-2xl bg-[#f4f8f5] border border-[#1e4d3b]/10 text-center space-y-3">
+              <p className="text-xs text-gray-600 font-medium">
+                No active counselling alerts. Your attendance is currently healthy or no open cases are queued.
+              </p>
+              <button
+                onClick={handleStartCheckIn}
+                className="bg-[#1e4d3b] text-white text-xs font-bold px-5 py-2.5 rounded-2xl hover:bg-[#143628] transition-all inline-flex items-center gap-2 shadow-sm"
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Start Proactive AI Counselling Check-in</span>
+              </button>
+            </div>
+          )}
+        </div>
 
       </main>
 

@@ -117,11 +117,12 @@ def seed_database():
         student_specs.append((f"Student {i:02d}", f"1VA21CS{i:03d}", f"student{i}@example.com", f"parent{i}@example.com"))
 
     students = []
-    for name, usn, email, p_email in student_specs:
+    for idx, (name, usn, email, p_email) in enumerate(student_specs):
+        user_email = f"sharmilashroff512+{usn.lower()}@gmail.com" if idx > 0 else "sharmilashroff512@gmail.com"
         u = User(
             role=Role.student,
             name=name,
-            email=email,
+            email=user_email,
             usn=usn,
             password_hash=hash_password(usn),
             is_active=True
@@ -134,7 +135,7 @@ def seed_database():
             class_id=classroom.id,
             name=name,
             usn=usn,
-            email=email,
+            email="sharmilashroff512@gmail.com",
             parent_email=p_email,
             parent_phone="9876543210"
         )

@@ -18,7 +18,7 @@ export default function FloatingChatbot() {
     return [
       {
         role: "assistant",
-        text: "Hello! I am your Attend Lens AI Assistant. Ask me anything about student attendance, subject averages, or exam eligibility!"
+        text: "Hello! I am your Attend Lens AI Assistant. Ask me anything—from study help, writing, and general questions to attendance records!"
       }
     ];
   });
@@ -78,7 +78,7 @@ export default function FloatingChatbot() {
     const defaultMsg = [
       {
         role: "assistant",
-        text: "Chat cleared. How can I assist you with attendance records?"
+        text: "Chat cleared. How can I assist you today?"
       }
     ];
     setMessages(defaultMsg);
@@ -112,7 +112,7 @@ export default function FloatingChatbot() {
               <div>
                 <h3 className="text-sm font-extrabold text-white">Attend Lens Assistant</h3>
                 <span className="text-[10px] text-[#a3b899] font-medium block">
-                  {currentStudentId ? `Context: Student #${currentStudentId}` : "Context: Class Roster"}
+                  General AI Assistant & Academic Help
                 </span>
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function FloatingChatbot() {
               <div className="flex justify-start">
                 <div className="bg-white p-3.5 rounded-2xl border border-[#1e4d3b]/10 text-gray-500 font-bold flex items-center gap-2 rounded-bl-none">
                   <Sparkles className="w-4 h-4 text-[#1e4d3b] animate-spin" />
-                  <span>AI Assistant is analyzing class data...</span>
+                  <span>AI Assistant is thinking...</span>
                 </div>
               </div>
             )}
@@ -176,7 +176,7 @@ export default function FloatingChatbot() {
           <form onSubmit={handleSend} className="p-3 bg-white border-t border-gray-100 flex items-center gap-2">
             <input
               type="text"
-              placeholder={currentStudentId ? "Ask about this student's status..." : "Ask about class attendance..."}
+              placeholder="Ask anything (study help, coding, attendance)..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
               className="flex-1 text-xs px-3.5 py-2.5 rounded-2xl bg-[#f4f8f5] border border-transparent focus:border-[#1e4d3b] outline-none font-medium text-gray-800"

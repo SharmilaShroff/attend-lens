@@ -1,0 +1,32 @@
+random_seed: 42
+
+paths:
+  raw_data_text: "data/raw/synthetic_text.csv"
+  raw_data_tabular: "data/raw/synthetic_tabular.csv"
+  model_dir: "models"
+  reports_dir: "reports/figures"
+  text_model_path: "models/text_model.joblib"
+  tabular_model_path: "models/tabular_model.joblib"
+
+categories:
+  problem_categories:
+    - "Health Issue"
+    - "Family or Personal Issue"
+    - "Financial or Transport Issue"
+    - "Academic Stress or Low Interest"
+    - "Mental Health or Anxiety"
+    - "Peer or Social Issue"
+    - "Work or Internship Commitment"
+    - "Unknown"
+  emotions:
+    - "Stressed"
+    - "Anxious"
+    - "Sad"
+    - "Demotivated"
+    - "Frustrated"
+    - "Neutral"
+    - "Hopeful"
+
+training:
+  test_size: 0.15
+  val_size: 0.15

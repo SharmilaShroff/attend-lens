@@ -7,7 +7,7 @@ from app.database import get_db
 from app.deps import get_current_user
 from app.models.models import (
     User, Student, Subject, Attendance, AttendanceStatus, AbsenceReason,
-    ReasonStatus, CounsellingCase, CounsellingMessage
+    ReasonStatus, CounsellingCase, CounsellingMessage, Alert
 )
 from app.schemas.all_schemas import (
     SubjectAttendanceSummary, AbsenceReasonCreate, AbsenceReasonOut,
@@ -37,6 +37,39 @@ def require_student(user: User = Depends(get_current_user), db: Session = Depend
 @router.get("/dashboard-data")
 def get_student_dashboard(student: Student = Depends(require_student), db: Session = Depends(get_db)):
     subjects = db.query(Subject).filter(Subject.class_id == student.class_id).all()
+
+    # If class has 0 subjects or only 1 single 'General Subject', expand to 5 distinct core subjects
+    if not subjects or (len(subjects) == 1 and subjects[0].name == "General Subject"):
+        old_records = []
+        if subjects and len(subjects) == 1 and subjects[0].name == "General Subject":
+            gen_sub = subjects[0]
+            old_records = db.query(Attendance).filter(Attendance.subject_id == gen_sub.id).all()
+            db.delete(gen_sub)
+            db.commit()
+
+        default_subjects = [
+            ("Database Management Systems", "CS601"),
+            ("Machine Learning", "CS602"),
+            ("Computer Networks", "CS603"),
+            ("Web Technologies", "CS604"),
+            ("Software Engineering", "CS605")
+        ]
+        new_subjects = []
+        for name, code in default_subjects:
+            sub = Subject(class_id=student.class_id, name=name, code=code)
+            db.add(sub)
+            db.commit()
+            db.refresh(sub)
+            new_subjects.append(sub)
+
+        # Distribute existing attendance records across the 5 distinct subjects
+        if old_records and new_subjects:
+            for idx, rec in enumerate(old_records):
+                rec.subject_id = new_subjects[idx % len(new_subjects)].id
+            db.commit()
+
+        subjects = new_subjects
+
     records = db.query(Attendance).filter(Attendance.student_id == student.id).all()
 
     total_classes = len(records)
@@ -44,6 +77,7 @@ def get_student_dashboard(student: Student = Depends(require_student), db: Sessi
     overall_pct = (total_attended / total_classes * 100.0) if total_classes > 0 else 100.0
 
     # Subject-wise breakdown for overall bar chart
+
     subject_summaries = []
     for s in subjects:
         sub_recs = [r for r in records if r.subject_id == s.id]
@@ -136,6 +170,52 @@ def submit_absence_reason(
     db.add(reason)
     db.commit()
     db.refresh(reason)
+    
+    try:
+        from app.services.counselling import create_or_get_counselling_case, generate_counselling_reply, generate_and_save_counselling_summary
+        from app.models.models import Alert, RiskLevel, CounsellingMessage
+        
+        recent_case = db.query(CounsellingCase).filter(
+            CounsellingCase.student_id == student.id
+        ).order_by(CounsellingCase.created_at.desc()).first()
+
+        if not recent_case:
+            alert = Alert(
+                student_id=student.id,
+                type="absence_reason_submission",
+                risk_score=0.6,
+                level=RiskLevel.medium,
+                explanation={"reasons": [f"Absence on {reason.date}: {reason.reason}"]}
+            )
+            db.add(alert)
+            db.commit()
+            db.refresh(alert)
+            recent_case = create_or_get_counselling_case(db, alert)
+        else:
+            # Add message and AI response to the active thread
+            user_msg = CounsellingMessage(
+                case_id=recent_case.id,
+                sender="student",
+                channel="app",
+                body=f"Submitted Absence Reason for {reason.date} ({reason.category}): {reason.reason}"
+            )
+            db.add(user_msg)
+            
+            ai_body, pred = generate_counselling_reply(student, recent_case, reason.reason, db=db)
+            ai_msg = CounsellingMessage(
+                case_id=recent_case.id,
+                sender="ai",
+                channel="app",
+                body=ai_body
+            )
+            db.add(ai_msg)
+            db.commit()
+
+            # Generate/update Counselling Summary in mentor's Remarks
+            generate_and_save_counselling_summary(db, recent_case.id)
+    except Exception as e:
+        print(f"[Counselling Trigger Error] {e}")
+
     return AbsenceReasonOut.model_validate(reason)
 
 
@@ -157,6 +237,7 @@ def list_absence_reasons(student: Student = Depends(require_student), db: Sessio
 def get_student_counselling_cases(student: Student = Depends(require_student), db: Session = Depends(get_db)):
     cases = db.query(CounsellingCase).filter(CounsellingCase.student_id == student.id).order_by(CounsellingCase.created_at.desc()).all()
     res = []
+
     for c in cases:
         out = CounsellingCaseOut.model_validate(c)
         out.student_name = student.name

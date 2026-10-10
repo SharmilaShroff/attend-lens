@@ -1,0 +1,2001 @@
+text,problem_category,emotion
+"Personal issues at home, taking a week off.",Family or Personal Issue,Stressed
+"my mother is unwell, need to take care of them.",Family or Personal Issue,Frustrated
+"Diagnosed with food poisoning, need a week to recover.",Health Issue,Frustrated
+"Diagnosed with food poisoning, need 2 days to recover.",Health Issue,Hopeful
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+Had to attend a family gathering.,Family or Personal Issue,Demotivated
+Feeling isolated and bullied. Sorry.,Peer or Social Issue,Frustrated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Hopeful
+"Personal issues at home, taking some time off.",Family or Personal Issue,Demotivated
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Frustrated
+Can't make it to class.,Unknown,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Neutral
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+Can't make it to class.,Unknown,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+i have too many exams this week. Sorry.,Academic Stress or Low Interest,Anxious
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+I have been feeling stomach pain for the past 2 days.,Health Issue,Neutral
+Can't make it to class.,Unknown,Stressed
+"Personal issues at home, taking a week off.",Family or Personal Issue,Hopeful
+i was sick with food poisoning and couldn't attend.,Health Issue,Frustrated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Anxious
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Feeling isolated and bullied. Sorry.,Peer or Social Issue,Stressed
+i have been feeling fever for the past 2 days.,Health Issue,Anxious
+Absent today.,Unknown,Anxious
+Not coming.,Unknown,Anxious
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Neutral
+I have been feeling fever for the past some time.,Health Issue,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+Called into work unexpectedly.,Work or Internship Commitment,Anxious
+Had to attend a family wedding.,Family or Personal Issue,Demotivated
+"Diagnosed with flu, need some time to recover.",Health Issue,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+Depressed and unable to leave the house.,Mental Health or Anxiety,Hopeful
+Absent today.,Unknown,Anxious
+i was sick with covid and couldn't attend.,Health Issue,Neutral
+my bike broke down.,Financial or Transport Issue,Stressed
+Feeling overwhelmed with the science assignments. Sorry.,Academic Stress or Low Interest,Demotivated
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Demotivated
+I have too many exams this week.,Academic Stress or Low Interest,Sad
+i won't be there.,Unknown,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+Feeling isolated and bullied.,Peer or Social Issue,Stressed
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+"Personal issues at home, taking few days off.",Family or Personal Issue,Anxious
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Sad
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+"suffering from stomach pain, doctor advised rest.",Health Issue,Stressed
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+My bus broke down.,Financial or Transport Issue,Frustrated
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Stressed
+"Diagnosed with flu, need few days to recover.",Health Issue,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Frustrated
+Couldn't afford the bus fare this week. Sorry.,Financial or Transport Issue,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Sad
+"Suffering from headache, doctor advised rest.",Health Issue,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Sad
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Feeling very anxious about my performance.,Mental Health or Anxiety,Stressed
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+i have too many exams this week.,Academic Stress or Low Interest,Sad
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Neutral
+I was sick with flu and couldn't attend.,Health Issue,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Absent today.,Unknown,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Stressed
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Anxious
+"My father is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+Had to work a double shift at my job. Sorry.,Work or Internship Commitment,Anxious
+"My father is unwell, need to take care of them.",Family or Personal Issue,Hopeful
+Absent today.,Unknown,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+Can't make it to class.,Unknown,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Hopeful
+"Personal issues at home, taking a week off.",Family or Personal Issue,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+I have too many exams this week.,Academic Stress or Low Interest,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+"suffering from severe cold, doctor advised rest.",Health Issue,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Sad
+My train broke down.,Financial or Transport Issue,Frustrated
+"My father is unwell, need to take care of them.",Family or Personal Issue,Neutral
+Mental health hasn't been great lately.,Mental Health or Anxiety,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Sad
+I have been feeling stomach pain for the past a week.,Health Issue,Neutral
+I have been feeling headache for the past a week.,Health Issue,Hopeful
+I have too many exams this week.,Academic Stress or Low Interest,Anxious
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+Family emergency came up suddenly.,Family or Personal Issue,Hopeful
+"Suffering from severe cold, doctor advised rest.",Health Issue,Sad
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+Had to attend a family gathering.,Family or Personal Issue,Hopeful
+"Personal issues at home, taking few days off.",Family or Personal Issue,Frustrated
+"Personal issues at home, taking some time off.",Family or Personal Issue,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Sad
+Not coming.,Unknown,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Neutral
+Not coming. Sorry.,Unknown,Neutral
+Depressed and unable to leave the house.,Mental Health or Anxiety,Anxious
+Got into a fight with a friend.,Peer or Social Issue,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Anxious
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+Had to attend a family gathering.,Family or Personal Issue,Hopeful
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Stressed
+I won't be there.,Unknown,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Stressed
+I have too many exams this week.,Academic Stress or Low Interest,Hopeful
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Anxious
+I won't be there.,Unknown,Sad
+Absent today.,Unknown,Stressed
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Demotivated
+My bike broke down.,Financial or Transport Issue,Stressed
+Feeling very anxious about my performance.,Mental Health or Anxiety,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Sad
+Called into work unexpectedly. Sorry.,Work or Internship Commitment,Neutral
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+Called into work unexpectedly.,Work or Internship Commitment,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+I have been feeling stomach pain for the past 2 days.,Health Issue,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+Not coming.,Unknown,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+"Diagnosed with flu, need 2 days to recover.",Health Issue,Neutral
+Had to attend a family accident.,Family or Personal Issue,Anxious
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Demotivated
+Not coming.,Unknown,Anxious
+My bus broke down.,Financial or Transport Issue,Hopeful
+Got into a fight with a friend.,Peer or Social Issue,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Hopeful
+Can't make it to class.,Unknown,Sad
+Absent today.,Unknown,Sad
+"job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+Had to work a double shift at my job. Sorry.,Work or Internship Commitment,Demotivated
+Having trouble with some classmates.,Peer or Social Issue,Hopeful
+Absent today.,Unknown,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Neutral
+"Job interview today, couldn't attend. Sorry.",Work or Internship Commitment,Sad
+"Personal issues at home, taking a week off.",Family or Personal Issue,Anxious
+Had to attend a family accident.,Family or Personal Issue,Hopeful
+I was sick with covid and couldn't attend.,Health Issue,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Anxious
+My train broke down.,Financial or Transport Issue,Anxious
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Anxious
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Hopeful
+Can't make it to class.,Unknown,Sad
+Mental health hasn't been great lately.,Mental Health or Anxiety,Demotivated
+Absent today.,Unknown,Stressed
+mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Frustrated
+Feeling isolated and bullied.,Peer or Social Issue,Anxious
+My car broke down.,Financial or Transport Issue,Neutral
+feeling isolated and bullied.,Peer or Social Issue,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+Can't make it to class.,Unknown,Hopeful
+Had to attend a family funeral.,Family or Personal Issue,Demotivated
+called into work unexpectedly.,Work or Internship Commitment,Hopeful
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+Feeling isolated and bullied.,Peer or Social Issue,Frustrated
+Can't make it to class.,Unknown,Neutral
+I was sick with food poisoning and couldn't attend.,Health Issue,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Frustrated
+Not coming.,Unknown,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+Got into a fight with a friend.,Peer or Social Issue,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+Absent today.,Unknown,Stressed
+I was sick with flu and couldn't attend.,Health Issue,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Sad
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Hopeful
+my bike broke down.,Financial or Transport Issue,Stressed
+struggling to keep up with the coursework.,Academic Stress or Low Interest,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Can't make it to class.,Unknown,Demotivated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Frustrated
+"Suffering from severe cold, doctor advised rest.",Health Issue,Demotivated
+I won't be there.,Unknown,Stressed
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Sad
+not coming.,Unknown,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Not coming.,Unknown,Demotivated
+Got into a fight with a friend.,Peer or Social Issue,Neutral
+I won't be there.,Unknown,Stressed
+"Personal issues at home, taking a week off.",Family or Personal Issue,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Stressed
+"Personal issues at home, taking few days off.",Family or Personal Issue,Sad
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Stressed
+Having trouble with some classmates.,Peer or Social Issue,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+can't make it to class.,Unknown,Frustrated
+"Diagnosed with dengue, need a week to recover.",Health Issue,Stressed
+feeling very anxious about my performance.,Mental Health or Anxiety,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Anxious
+Social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Stressed
+I have been feeling stomach pain for the past some time.,Health Issue,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Hopeful
+Had to attend a family funeral.,Family or Personal Issue,Demotivated
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Demotivated
+Had to attend a family funeral.,Family or Personal Issue,Frustrated
+My bike broke down.,Financial or Transport Issue,Anxious
+My bike broke down.,Financial or Transport Issue,Hopeful
+Not coming.,Unknown,Hopeful
+Got into a fight with a friend.,Peer or Social Issue,Hopeful
+Can't make it to class.,Unknown,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+I was sick with covid and couldn't attend.,Health Issue,Sad
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Frustrated
+"Diagnosed with dengue, need some time to recover.",Health Issue,Demotivated
+Can't make it to class.,Unknown,Stressed
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Sad
+I was sick with covid and couldn't attend.,Health Issue,Hopeful
+Called into work unexpectedly.,Work or Internship Commitment,Sad
+My bike broke down.,Financial or Transport Issue,Sad
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+"my sister is unwell, need to take care of them.",Family or Personal Issue,Neutral
+I have too many exams this week.,Academic Stress or Low Interest,Sad
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Stressed
+I was sick with flu and couldn't attend.,Health Issue,Neutral
+Couldn't afford the bus fare this week. Sorry.,Financial or Transport Issue,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Neutral
+Absent today.,Unknown,Anxious
+Absent today.,Unknown,Hopeful
+Can't make it to class.,Unknown,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+had to attend a family gathering.,Family or Personal Issue,Neutral
+Absent today.,Unknown,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+family emergency came up suddenly.,Family or Personal Issue,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+Absent today.,Unknown,Neutral
+I have been feeling stomach pain for the past a week.,Health Issue,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+i have too many exams this week.,Academic Stress or Low Interest,Demotivated
+I won't be there.,Unknown,Frustrated
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+"Suffering from fever, doctor advised rest.",Health Issue,Demotivated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Neutral
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Neutral
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+Absent today.,Unknown,Neutral
+Can't make it to class.,Unknown,Stressed
+I was sick with food poisoning and couldn't attend.,Health Issue,Sad
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Stressed
+I was sick with dengue and couldn't attend.,Health Issue,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Hopeful
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+not coming.,Unknown,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Stressed
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+absent today.,Unknown,Stressed
+Social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Frustrated
+feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+Can't make it to class.,Unknown,Anxious
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+Can't make it to class.,Unknown,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Sad
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Hopeful
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Demotivated
+"Personal issues at home, taking few days off.",Family or Personal Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Anxious
+I have been feeling headache for the past 2 days.,Health Issue,Hopeful
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Sad
+Mental health hasn't been great lately.,Mental Health or Anxiety,Anxious
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+Having trouble with some classmates. Sorry.,Peer or Social Issue,Hopeful
+I was sick with flu and couldn't attend.,Health Issue,Neutral
+I was sick with dengue and couldn't attend.,Health Issue,Demotivated
+"job interview today, couldn't attend.",Work or Internship Commitment,Sad
+Not coming.,Unknown,Demotivated
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Sad
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Hopeful
+Can't make it to class.,Unknown,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Frustrated
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+I won't be there.,Unknown,Sad
+Mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Frustrated
+Had to attend a family accident.,Family or Personal Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+I have been feeling headache for the past 2 days.,Health Issue,Stressed
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Demotivated
+Can't make it to class. Sorry.,Unknown,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Neutral
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Frustrated
+Feeling overwhelmed with the history assignments.,Academic Stress or Low Interest,Neutral
+had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Had to attend a family accident.,Family or Personal Issue,Anxious
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+"Diagnosed with flu, need 2 days to recover.",Health Issue,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Got into a fight with a friend.,Peer or Social Issue,Neutral
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Sad
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+Not coming.,Unknown,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Hopeful
+Mental health hasn't been great lately.,Mental Health or Anxiety,Stressed
+Can't make it to class.,Unknown,Neutral
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Anxious
+"Job interview today, couldn't attend.",Work or Internship Commitment,Sad
+"Diagnosed with food poisoning, need some time to recover.",Health Issue,Frustrated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+"Suffering from headache, doctor advised rest. Sorry.",Health Issue,Anxious
+"Job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+Feeling very anxious about my performance.,Mental Health or Anxiety,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+Not coming.,Unknown,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+I was sick with dengue and couldn't attend.,Health Issue,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Frustrated
+Had to attend a family funeral.,Family or Personal Issue,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Sad
+Mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+"Personal issues at home, taking a week off.",Family or Personal Issue,Demotivated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Neutral
+Feeling isolated and bullied.,Peer or Social Issue,Frustrated
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Demotivated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Hopeful
+"my sister is unwell, need to take care of them.",Family or Personal Issue,Frustrated
+"Diagnosed with flu, need a week to recover.",Health Issue,Hopeful
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+I won't be there.,Unknown,Hopeful
+I won't be there.,Unknown,Frustrated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Neutral
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Frustrated
+"Suffering from fever, doctor advised rest.",Health Issue,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Hopeful
+Not coming.,Unknown,Hopeful
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Neutral
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Neutral
+Depressed and unable to leave the house.,Mental Health or Anxiety,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+I have been feeling headache for the past few days.,Health Issue,Demotivated
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Hopeful
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+"Having some money issues, need to work extra shifts. Sorry.",Financial or Transport Issue,Neutral
+Social anxiety is making it hard to attend.,Peer or Social Issue,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Absent today.,Unknown,Anxious
+Not coming.,Unknown,Stressed
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Demotivated
+"Personal issues at home, taking few days off.",Family or Personal Issue,Demotivated
+"Suffering from fever, doctor advised rest.",Health Issue,Sad
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+"Diagnosed with covid, need some time to recover.",Health Issue,Anxious
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Demotivated
+I won't be there.,Unknown,Demotivated
+Got into a fight with a friend. Sorry.,Peer or Social Issue,Anxious
+don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+Absent today.,Unknown,Demotivated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+I have been feeling fever for the past few days.,Health Issue,Frustrated
+don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+Social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Stressed
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Sad
+I won't be there.,Unknown,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+Had to attend a family funeral.,Family or Personal Issue,Frustrated
+I won't be there.,Unknown,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+"Diagnosed with food poisoning, need few days to recover.",Health Issue,Anxious
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+"personal issues at home, taking few days off.",Family or Personal Issue,Frustrated
+"my sister is unwell, need to take care of them.",Family or Personal Issue,Sad
+Absent today.,Unknown,Demotivated
+"job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Sad
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Had to attend a family gathering.,Family or Personal Issue,Stressed
+social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+I won't be there.,Unknown,Hopeful
+Absent today.,Unknown,Frustrated
+I was sick with food poisoning and couldn't attend.,Health Issue,Demotivated
+Feeling isolated and bullied.,Peer or Social Issue,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+Got into a fight with a friend.,Peer or Social Issue,Demotivated
+Family emergency came up suddenly.,Family or Personal Issue,Frustrated
+"Suffering from headache, doctor advised rest.",Health Issue,Neutral
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Frustrated
+I was sick with flu and couldn't attend.,Health Issue,Stressed
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+My train broke down.,Financial or Transport Issue,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+I won't be there.,Unknown,Sad
+"Personal issues at home, taking few days off.",Family or Personal Issue,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Can't make it to class.,Unknown,Frustrated
+"Personal issues at home, taking some time off.",Family or Personal Issue,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Absent today.,Unknown,Neutral
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Anxious
+"Diagnosed with flu, need some time to recover.",Health Issue,Demotivated
+Not coming.,Unknown,Demotivated
+I won't be there.,Unknown,Anxious
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Sad
+Not coming.,Unknown,Frustrated
+"Personal issues at home, taking few days off.",Family or Personal Issue,Sad
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Demotivated
+Can't make it to class.,Unknown,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Neutral
+I have too many exams this week.,Academic Stress or Low Interest,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Demotivated
+I have been feeling severe cold for the past 2 days.,Health Issue,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+Got into a fight with a friend.,Peer or Social Issue,Hopeful
+Can't make it to class.,Unknown,Hopeful
+"Suffering from fever, doctor advised rest.",Health Issue,Stressed
+I won't be there.,Unknown,Demotivated
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Neutral
+"personal issues at home, taking 2 days off.",Family or Personal Issue,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Stressed
+feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+I was sick with covid and couldn't attend.,Health Issue,Neutral
+My bike broke down.,Financial or Transport Issue,Demotivated
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Stressed
+couldn't afford the bus fare this week.,Financial or Transport Issue,Neutral
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Frustrated
+Had to attend a family accident.,Family or Personal Issue,Anxious
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Anxious
+Feeling very anxious about my performance.,Mental Health or Anxiety,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+"Diagnosed with food poisoning, need some time to recover.",Health Issue,Hopeful
+Had to attend a family gathering.,Family or Personal Issue,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Had to attend a family wedding. Sorry.,Family or Personal Issue,Stressed
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Hopeful
+"job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+my bus broke down.,Financial or Transport Issue,Sad
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Frustrated
+"my father is unwell, need to take care of them.",Family or Personal Issue,Sad
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+My bike broke down.,Financial or Transport Issue,Stressed
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+Feeling very anxious about my performance. Sorry.,Mental Health or Anxiety,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+"my sister is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Sad
+Had to attend a family wedding. Sorry.,Family or Personal Issue,Anxious
+I was sick with food poisoning and couldn't attend.,Health Issue,Demotivated
+"Suffering from headache, doctor advised rest.",Health Issue,Frustrated
+Having trouble with some classmates.,Peer or Social Issue,Sad
+"diagnosed with covid, need some time to recover.",Health Issue,Anxious
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+"Diagnosed with dengue, need 2 days to recover.",Health Issue,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+feeling overwhelmed with the history assignments.,Academic Stress or Low Interest,Anxious
+I have been feeling severe cold for the past 2 days.,Health Issue,Sad
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+stuck in traffic for hours due to wedding.,Financial or Transport Issue,Neutral
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Frustrated
+"Diagnosed with flu, need 2 days to recover.",Health Issue,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+"Personal issues at home, taking a week off.",Family or Personal Issue,Frustrated
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+i was sick with flu and couldn't attend.,Health Issue,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Stressed
+I have too many exams this week.,Academic Stress or Low Interest,Stressed
+Had to attend a family funeral.,Family or Personal Issue,Stressed
+Having trouble with some classmates.,Peer or Social Issue,Neutral
+Had to attend a family funeral.,Family or Personal Issue,Stressed
+stuck in traffic for hours due to wedding.,Financial or Transport Issue,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Frustrated
+"Suffering from headache, doctor advised rest.",Health Issue,Demotivated
+Depressed and unable to leave the house. Sorry.,Mental Health or Anxiety,Sad
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Neutral
+I won't be there.,Unknown,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+I was sick with food poisoning and couldn't attend.,Health Issue,Demotivated
+Got into a fight with a friend.,Peer or Social Issue,Demotivated
+struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+Can't make it to class. Sorry.,Unknown,Frustrated
+"diagnosed with covid, need some time to recover.",Health Issue,Anxious
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Hopeful
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+My bus broke down.,Financial or Transport Issue,Hopeful
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Got into a fight with a friend.,Peer or Social Issue,Anxious
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+Feeling overwhelmed with the history assignments.,Academic Stress or Low Interest,Neutral
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Sad
+"personal issues at home, taking some time off.",Family or Personal Issue,Hopeful
+"Personal issues at home, taking few days off. Sorry.",Family or Personal Issue,Sad
+Not coming.,Unknown,Neutral
+Can't make it to class.,Unknown,Demotivated
+Absent today.,Unknown,Hopeful
+I have been feeling stomach pain for the past 2 days.,Health Issue,Sad
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Demotivated
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Sad
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+i won't be there.,Unknown,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Anxious
+Can't make it to class.,Unknown,Stressed
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+"Personal issues at home, taking some time off.",Family or Personal Issue,Stressed
+"Suffering from severe cold, doctor advised rest.",Health Issue,Hopeful
+Absent today.,Unknown,Frustrated
+"Diagnosed with covid, need some time to recover.",Health Issue,Frustrated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Hopeful
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+I won't be there.,Unknown,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+Had to attend a family gathering.,Family or Personal Issue,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Sad
+Absent today.,Unknown,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+I have too many exams this week.,Academic Stress or Low Interest,Stressed
+I was sick with dengue and couldn't attend.,Health Issue,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Hopeful
+Can't make it to class.,Unknown,Hopeful
+"My father is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Can't make it to class.,Unknown,Hopeful
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Stressed
+"Diagnosed with flu, need few days to recover.",Health Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Neutral
+Not coming.,Unknown,Frustrated
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+had to attend a family accident.,Family or Personal Issue,Sad
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+"Diagnosed with flu, need few days to recover.",Health Issue,Demotivated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+Got into a fight with a friend.,Peer or Social Issue,Demotivated
+clash with my internship schedule.,Work or Internship Commitment,Frustrated
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Sad
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Hopeful
+Can't make it to class.,Unknown,Sad
+"Diagnosed with dengue, need a week to recover.",Health Issue,Frustrated
+Can't make it to class.,Unknown,Neutral
+My train broke down.,Financial or Transport Issue,Sad
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Neutral
+Mental health hasn't been great lately.,Mental Health or Anxiety,Demotivated
+I won't be there.,Unknown,Hopeful
+Family emergency came up suddenly.,Family or Personal Issue,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Frustrated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Anxious
+Can't make it to class.,Unknown,Anxious
+"Personal issues at home, taking a week off.",Family or Personal Issue,Demotivated
+Absent today.,Unknown,Sad
+My bike broke down.,Financial or Transport Issue,Demotivated
+"Job interview today, couldn't attend. Sorry.",Work or Internship Commitment,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Neutral
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Stressed
+Feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+My bus broke down.,Financial or Transport Issue,Stressed
+Feeling isolated and bullied.,Peer or Social Issue,Demotivated
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Neutral
+I was sick with covid and couldn't attend. Sorry.,Health Issue,Demotivated
+Had to attend a family wedding.,Family or Personal Issue,Neutral
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+"Suffering from fever, doctor advised rest.",Health Issue,Sad
+My car broke down.,Financial or Transport Issue,Demotivated
+Absent today.,Unknown,Anxious
+I have too many exams this week. Sorry.,Academic Stress or Low Interest,Sad
+Not coming. Sorry.,Unknown,Anxious
+"My father is unwell, need to take care of them.",Family or Personal Issue,Stressed
+Had to attend a family gathering.,Family or Personal Issue,Neutral
+depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+I was sick with dengue and couldn't attend.,Health Issue,Hopeful
+Had to attend a family wedding.,Family or Personal Issue,Stressed
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Sad
+"Personal issues at home, taking a week off.",Family or Personal Issue,Sad
+Not coming.,Unknown,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Neutral
+"Diagnosed with covid, need some time to recover.",Health Issue,Hopeful
+Not coming.,Unknown,Anxious
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+i was sick with dengue and couldn't attend.,Health Issue,Stressed
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Demotivated
+clash with my internship schedule.,Work or Internship Commitment,Anxious
+Not coming.,Unknown,Hopeful
+Absent today.,Unknown,Sad
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+not coming.,Unknown,Demotivated
+Social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Stressed
+Clash with my internship schedule. Sorry.,Work or Internship Commitment,Demotivated
+"Personal issues at home, taking a week off.",Family or Personal Issue,Hopeful
+Having trouble with some classmates.,Peer or Social Issue,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+I won't be there.,Unknown,Stressed
+Got into a fight with a friend.,Peer or Social Issue,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Hopeful
+My car broke down.,Financial or Transport Issue,Demotivated
+Absent today.,Unknown,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Sad
+Absent today.,Unknown,Hopeful
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Neutral
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Frustrated
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+I have been feeling fever for the past some time.,Health Issue,Frustrated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Sad
+My bus broke down.,Financial or Transport Issue,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+I have too many exams this week.,Academic Stress or Low Interest,Neutral
+Feeling very anxious about my performance.,Mental Health or Anxiety,Neutral
+having trouble with some classmates.,Peer or Social Issue,Frustrated
+Absent today.,Unknown,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+my train broke down.,Financial or Transport Issue,Neutral
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+feeling isolated and bullied.,Peer or Social Issue,Demotivated
+I was sick with food poisoning and couldn't attend.,Health Issue,Hopeful
+"Personal issues at home, taking a week off.",Family or Personal Issue,Hopeful
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Neutral
+I won't be there.,Unknown,Frustrated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Stressed
+Can't make it to class.,Unknown,Stressed
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+I have been feeling headache for the past a week.,Health Issue,Neutral
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+can't make it to class.,Unknown,Neutral
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+Had to attend a family wedding.,Family or Personal Issue,Hopeful
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+Not coming. Sorry.,Unknown,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+Feeling isolated and bullied. Sorry.,Peer or Social Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Anxious
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+"Suffering from fever, doctor advised rest.",Health Issue,Hopeful
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Frustrated
+Feeling isolated and bullied.,Peer or Social Issue,Anxious
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+Not coming.,Unknown,Demotivated
+Had to attend a family gathering.,Family or Personal Issue,Anxious
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Sad
+"Suffering from headache, doctor advised rest.",Health Issue,Hopeful
+Absent today.,Unknown,Neutral
+Depressed and unable to leave the house.,Mental Health or Anxiety,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+"Having some money issues, need to work extra shifts. Sorry.",Financial or Transport Issue,Neutral
+I won't be there.,Unknown,Anxious
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Frustrated
+I was sick with covid and couldn't attend.,Health Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+"Personal issues at home, taking some time off.",Family or Personal Issue,Frustrated
+Called into work unexpectedly.,Work or Internship Commitment,Sad
+"Diagnosed with food poisoning, need a week to recover.",Health Issue,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+had to work a double shift at my job.,Work or Internship Commitment,Stressed
+my bike broke down.,Financial or Transport Issue,Anxious
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Frustrated
+I was sick with covid and couldn't attend.,Health Issue,Neutral
+Not coming.,Unknown,Hopeful
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Hopeful
+I have been feeling fever for the past some time.,Health Issue,Hopeful
+"Suffering from severe cold, doctor advised rest. Sorry.",Health Issue,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+Family emergency came up suddenly.,Family or Personal Issue,Demotivated
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Sad
+I have been feeling fever for the past some time.,Health Issue,Frustrated
+Got into a fight with a friend.,Peer or Social Issue,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Hopeful
+Can't make it to class.,Unknown,Anxious
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+My bike broke down.,Financial or Transport Issue,Hopeful
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+"Suffering from fever, doctor advised rest.",Health Issue,Anxious
+not coming.,Unknown,Frustrated
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Frustrated
+I have been feeling stomach pain for the past some time.,Health Issue,Anxious
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Frustrated
+Got into a fight with a friend.,Peer or Social Issue,Sad
+I won't be there.,Unknown,Demotivated
+Had to attend a family gathering.,Family or Personal Issue,Frustrated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+Absent today.,Unknown,Hopeful
+Not coming.,Unknown,Neutral
+can't make it to class.,Unknown,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+Family emergency came up suddenly.,Family or Personal Issue,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Hopeful
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Hopeful
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Neutral
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Demotivated
+My train broke down. Sorry.,Financial or Transport Issue,Demotivated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Demotivated
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Frustrated
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+My bike broke down.,Financial or Transport Issue,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+I have been feeling headache for the past few days.,Health Issue,Demotivated
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Demotivated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Sad
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Neutral
+"Personal issues at home, taking some time off.",Family or Personal Issue,Demotivated
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+Can't make it to class.,Unknown,Hopeful
+Absent today. Sorry.,Unknown,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+i won't be there.,Unknown,Frustrated
+"personal issues at home, taking a week off.",Family or Personal Issue,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+couldn't afford the bus fare this week.,Financial or Transport Issue,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Frustrated
+Called into work unexpectedly.,Work or Internship Commitment,Frustrated
+Feeling overwhelmed with the history assignments.,Academic Stress or Low Interest,Hopeful
+My car broke down.,Financial or Transport Issue,Sad
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Sad
+Not coming.,Unknown,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+can't make it to class. Sorry.,Unknown,Anxious
+I have been feeling stomach pain for the past 2 days.,Health Issue,Anxious
+I have been feeling headache for the past few days.,Health Issue,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Hopeful
+I have been feeling headache for the past few days.,Health Issue,Sad
+Absent today.,Unknown,Anxious
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Demotivated
+"Having a panic attack, couldn't make it. Sorry.",Mental Health or Anxiety,Sad
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Sad
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Hopeful
+"Suffering from headache, doctor advised rest.",Health Issue,Frustrated
+My bus broke down.,Financial or Transport Issue,Demotivated
+I was sick with flu and couldn't attend.,Health Issue,Stressed
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Demotivated
+Social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Hopeful
+Had to work a double shift at my job. Sorry.,Work or Internship Commitment,Sad
+Can't make it to class.,Unknown,Frustrated
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Frustrated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+Family emergency came up suddenly. Sorry.,Family or Personal Issue,Stressed
+family emergency came up suddenly.,Family or Personal Issue,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+Mental health hasn't been great lately.,Mental Health or Anxiety,Stressed
+"Suffering from fever, doctor advised rest.",Health Issue,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+I was sick with covid and couldn't attend.,Health Issue,Hopeful
+Had to attend a family wedding.,Family or Personal Issue,Anxious
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Anxious
+Clash with my internship schedule.,Work or Internship Commitment,Neutral
+Not coming.,Unknown,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Frustrated
+Can't make it to class.,Unknown,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+i have been feeling headache for the past 2 days.,Health Issue,Sad
+struggling to keep up with the coursework.,Academic Stress or Low Interest,Hopeful
+"having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Anxious
+mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Neutral
+"Personal issues at home, taking few days off.",Family or Personal Issue,Frustrated
+Had to attend a family gathering.,Family or Personal Issue,Hopeful
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+"Suffering from fever, doctor advised rest. Sorry.",Health Issue,Neutral
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Sad
+Clash with my internship schedule.,Work or Internship Commitment,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+"suffering from stomach pain, doctor advised rest.",Health Issue,Frustrated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Had to work a double shift at my job.,Work or Internship Commitment,Neutral
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Anxious
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Anxious
+Had to attend a family funeral.,Family or Personal Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Stressed
+I won't be there.,Unknown,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Anxious
+My train broke down.,Financial or Transport Issue,Neutral
+"Diagnosed with covid, need 2 days to recover.",Health Issue,Sad
+Depressed and unable to leave the house. Sorry.,Mental Health or Anxiety,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+having trouble with some classmates.,Peer or Social Issue,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+i won't be there.,Unknown,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+Got into a fight with a friend.,Peer or Social Issue,Neutral
+Feeling very anxious about my performance.,Mental Health or Anxiety,Hopeful
+I was sick with flu and couldn't attend.,Health Issue,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Demotivated
+My car broke down.,Financial or Transport Issue,Sad
+My bus broke down.,Financial or Transport Issue,Neutral
+"Job interview today, couldn't attend.",Work or Internship Commitment,Sad
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+I have been feeling severe cold for the past a week.,Health Issue,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+Feeling overwhelmed with the history assignments. Sorry.,Academic Stress or Low Interest,Anxious
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+Can't make it to class.,Unknown,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Demotivated
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+"Suffering from fever, doctor advised rest.",Health Issue,Anxious
+I was sick with food poisoning and couldn't attend.,Health Issue,Anxious
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+"diagnosed with food poisoning, need some time to recover.",Health Issue,Neutral
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+"Suffering from headache, doctor advised rest.",Health Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Neutral
+"my sister is unwell, need to take care of them.",Family or Personal Issue,Neutral
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+Feeling isolated and bullied.,Peer or Social Issue,Frustrated
+I was sick with dengue and couldn't attend.,Health Issue,Demotivated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+I won't be there.,Unknown,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+i was sick with flu and couldn't attend.,Health Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Stressed
+feeling very anxious about my performance.,Mental Health or Anxiety,Sad
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+"My father is unwell, need to take care of them.",Family or Personal Issue,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+I have been feeling severe cold for the past 2 days.,Health Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+Not coming.,Unknown,Frustrated
+Struggling to keep up with the coursework. Sorry.,Academic Stress or Low Interest,Neutral
+I have been feeling headache for the past some time.,Health Issue,Demotivated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+"Diagnosed with flu, need 2 days to recover.",Health Issue,Hopeful
+I won't be there.,Unknown,Demotivated
+Can't make it to class.,Unknown,Hopeful
+I was sick with dengue and couldn't attend. Sorry.,Health Issue,Hopeful
+got into a fight with a friend.,Peer or Social Issue,Hopeful
+"Suffering from headache, doctor advised rest.",Health Issue,Sad
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Hopeful
+Family emergency came up suddenly.,Family or Personal Issue,Demotivated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Anxious
+"Diagnosed with covid, need some time to recover.",Health Issue,Hopeful
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Anxious
+My train broke down.,Financial or Transport Issue,Anxious
+"Personal issues at home, taking few days off.",Family or Personal Issue,Stressed
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Sad
+Mental health hasn't been great lately.,Mental Health or Anxiety,Stressed
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Anxious
+I won't be there.,Unknown,Neutral
+Had to attend a family funeral.,Family or Personal Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Anxious
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+i have been feeling fever for the past some time.,Health Issue,Demotivated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Feeling overwhelmed with the history assignments.,Academic Stress or Low Interest,Neutral
+Not coming.,Unknown,Stressed
+Absent today.,Unknown,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+Got into a fight with a friend. Sorry.,Peer or Social Issue,Hopeful
+Can't make it to class.,Unknown,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+Had to attend a family gathering.,Family or Personal Issue,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Frustrated
+Not coming.,Unknown,Stressed
+Can't make it to class.,Unknown,Anxious
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+"Diagnosed with flu, need some time to recover.",Health Issue,Hopeful
+Absent today.,Unknown,Anxious
+Mental health hasn't been great lately.,Mental Health or Anxiety,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Hopeful
+I was sick with covid and couldn't attend.,Health Issue,Stressed
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+Absent today.,Unknown,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+My car broke down.,Financial or Transport Issue,Anxious
+Not coming.,Unknown,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Frustrated
+Can't make it to class.,Unknown,Demotivated
+"Suffering from headache, doctor advised rest.",Health Issue,Frustrated
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Frustrated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Demotivated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Demotivated
+"Suffering from severe cold, doctor advised rest.",Health Issue,Demotivated
+Got into a fight with a friend. Sorry.,Peer or Social Issue,Hopeful
+mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+My bus broke down.,Financial or Transport Issue,Frustrated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Demotivated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+Feeling isolated and bullied.,Peer or Social Issue,Stressed
+Not coming.,Unknown,Hopeful
+Absent today.,Unknown,Neutral
+Got into a fight with a friend.,Peer or Social Issue,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+having trouble with some classmates.,Peer or Social Issue,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+Mental health hasn't been great lately.,Mental Health or Anxiety,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Frustrated
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+I have been feeling fever for the past some time.,Health Issue,Demotivated
+feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Neutral
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+Not coming.,Unknown,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Demotivated
+depressed and unable to leave the house.,Mental Health or Anxiety,Anxious
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Frustrated
+Can't make it to class.,Unknown,Neutral
+depressed and unable to leave the house.,Mental Health or Anxiety,Hopeful
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+Not coming.,Unknown,Demotivated
+family emergency came up suddenly.,Family or Personal Issue,Frustrated
+Can't make it to class.,Unknown,Stressed
+i have been feeling stomach pain for the past 2 days.,Health Issue,Neutral
+"Having a panic attack, couldn't make it. Sorry.",Mental Health or Anxiety,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Neutral
+"personal issues at home, taking some time off.",Family or Personal Issue,Neutral
+feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Anxious
+i have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Depressed and unable to leave the house. Sorry.,Mental Health or Anxiety,Demotivated
+Got into a fight with a friend. Sorry.,Peer or Social Issue,Stressed
+"My father is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Family emergency came up suddenly. Sorry.,Family or Personal Issue,Stressed
+"Diagnosed with covid, need a week to recover.",Health Issue,Anxious
+Family emergency came up suddenly.,Family or Personal Issue,Demotivated
+"my father is unwell, need to take care of them.",Family or Personal Issue,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Sad
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Neutral
+i have been feeling severe cold for the past a week.,Health Issue,Anxious
+"Diagnosed with covid, need 2 days to recover.",Health Issue,Stressed
+Absent today.,Unknown,Neutral
+Absent today.,Unknown,Demotivated
+"Diagnosed with food poisoning, need few days to recover.",Health Issue,Frustrated
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+"Personal issues at home, taking a week off.",Family or Personal Issue,Frustrated
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Sad
+Absent today.,Unknown,Demotivated
+I was sick with dengue and couldn't attend.,Health Issue,Neutral
+I won't be there.,Unknown,Stressed
+My train broke down.,Financial or Transport Issue,Anxious
+I have too many exams this week.,Academic Stress or Low Interest,Neutral
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Neutral
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Feeling isolated and bullied. Sorry.,Peer or Social Issue,Sad
+"Diagnosed with covid, need some time to recover.",Health Issue,Sad
+Got into a fight with a friend.,Peer or Social Issue,Anxious
+couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+Absent today.,Unknown,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+Feeling isolated and bullied.,Peer or Social Issue,Demotivated
+My train broke down. Sorry.,Financial or Transport Issue,Frustrated
+I won't be there.,Unknown,Neutral
+"my father is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Stressed
+"Suffering from headache, doctor advised rest.",Health Issue,Demotivated
+Social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Neutral
+"Personal issues at home, taking few days off.",Family or Personal Issue,Demotivated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Hopeful
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+I was sick with flu and couldn't attend.,Health Issue,Sad
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Anxious
+Absent today.,Unknown,Neutral
+Got into a fight with a friend.,Peer or Social Issue,Sad
+I was sick with dengue and couldn't attend.,Health Issue,Stressed
+"Personal issues at home, taking some time off.",Family or Personal Issue,Demotivated
+"my mother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Feeling very anxious about my performance.,Mental Health or Anxiety,Stressed
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Demotivated
+"Suffering from headache, doctor advised rest.",Health Issue,Sad
+"Diagnosed with covid, need few days to recover.",Health Issue,Sad
+Got into a fight with a friend.,Peer or Social Issue,Demotivated
+Not coming.,Unknown,Frustrated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Anxious
+Feeling very anxious about my performance.,Mental Health or Anxiety,Hopeful
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Frustrated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Frustrated
+Absent today.,Unknown,Frustrated
+"Suffering from headache, doctor advised rest.",Health Issue,Demotivated
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Hopeful
+Absent today.,Unknown,Stressed
+"diagnosed with food poisoning, need 2 days to recover.",Health Issue,Demotivated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Frustrated
+Feeling overwhelmed with the history assignments.,Academic Stress or Low Interest,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+I was sick with food poisoning and couldn't attend.,Health Issue,Neutral
+got into a fight with a friend.,Peer or Social Issue,Demotivated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Anxious
+Can't make it to class.,Unknown,Stressed
+I won't be there.,Unknown,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+I won't be there.,Unknown,Neutral
+I was sick with flu and couldn't attend.,Health Issue,Hopeful
+Absent today.,Unknown,Neutral
+got into a fight with a friend.,Peer or Social Issue,Demotivated
+Family emergency came up suddenly.,Family or Personal Issue,Frustrated
+Family emergency came up suddenly.,Family or Personal Issue,Frustrated
+mental health hasn't been great lately.,Mental Health or Anxiety,Sad
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+Can't make it to class.,Unknown,Demotivated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Anxious
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+I was sick with dengue and couldn't attend.,Health Issue,Demotivated
+Can't make it to class.,Unknown,Frustrated
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Sad
+clash with my internship schedule.,Work or Internship Commitment,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+i have been feeling stomach pain for the past few days.,Health Issue,Demotivated
+Had to attend a family funeral.,Family or Personal Issue,Hopeful
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Frustrated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+I have been feeling headache for the past some time.,Health Issue,Neutral
+I won't be there.,Unknown,Neutral
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+Got into a fight with a friend. Sorry.,Peer or Social Issue,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Anxious
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+family emergency came up suddenly.,Family or Personal Issue,Neutral
+Social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+Can't make it to class.,Unknown,Sad
+"Job interview today, couldn't attend.",Work or Internship Commitment,Sad
+Can't make it to class.,Unknown,Frustrated
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Sad
+I have been feeling fever for the past some time.,Health Issue,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Frustrated
+Had to attend a family accident.,Family or Personal Issue,Hopeful
+Can't make it to class.,Unknown,Demotivated
+I have been feeling severe cold for the past few days.,Health Issue,Hopeful
+"job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Demotivated
+Absent today.,Unknown,Demotivated
+Not coming.,Unknown,Frustrated
+feeling very anxious about my performance. Sorry.,Mental Health or Anxiety,Sad
+Having trouble with some classmates.,Peer or Social Issue,Sad
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+Feeling isolated and bullied.,Peer or Social Issue,Stressed
+Had to attend a family gathering.,Family or Personal Issue,Neutral
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Absent today.,Unknown,Stressed
+Got into a fight with a friend.,Peer or Social Issue,Anxious
+I won't be there.,Unknown,Neutral
+Feeling very anxious about my performance.,Mental Health or Anxiety,Sad
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Frustrated
+Absent today.,Unknown,Demotivated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+Not coming.,Unknown,Sad
+"Diagnosed with dengue, need some time to recover.",Health Issue,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Hopeful
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+Clash with my internship schedule. Sorry.,Work or Internship Commitment,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Demotivated
+"diagnosed with dengue, need a week to recover.",Health Issue,Anxious
+"Having a panic attack, couldn't make it. Sorry.",Mental Health or Anxiety,Neutral
+i won't be there.,Unknown,Hopeful
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+My car broke down.,Financial or Transport Issue,Anxious
+Feeling very anxious about my performance.,Mental Health or Anxiety,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Demotivated
+Can't make it to class.,Unknown,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+I have been feeling fever for the past a week.,Health Issue,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Hopeful
+I won't be there.,Unknown,Demotivated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Sad
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+Not coming.,Unknown,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+"My sister is unwell, need to take care of them. Sorry.",Family or Personal Issue,Sad
+"diagnosed with food poisoning, need a week to recover.",Health Issue,Neutral
+Feeling very anxious about my performance.,Mental Health or Anxiety,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Hopeful
+Absent today.,Unknown,Hopeful
+Got into a fight with a friend.,Peer or Social Issue,Hopeful
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Stressed
+don't find the classes interesting anymore.,Academic Stress or Low Interest,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+Depressed and unable to leave the house.,Mental Health or Anxiety,Sad
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Frustrated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Sad
+social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Neutral
+called into work unexpectedly.,Work or Internship Commitment,Neutral
+"Diagnosed with food poisoning, need 2 days to recover.",Health Issue,Sad
+I was sick with food poisoning and couldn't attend.,Health Issue,Stressed
+Having trouble with some classmates.,Peer or Social Issue,Anxious
+Not coming.,Unknown,Sad
+Called into work unexpectedly. Sorry.,Work or Internship Commitment,Anxious
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Demotivated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+Absent today.,Unknown,Stressed
+I was sick with flu and couldn't attend.,Health Issue,Demotivated
+Not coming.,Unknown,Stressed
+Not coming.,Unknown,Demotivated
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Stressed
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Neutral
+My bike broke down.,Financial or Transport Issue,Demotivated
+Got into a fight with a friend.,Peer or Social Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+I have been feeling severe cold for the past 2 days.,Health Issue,Sad
+My bus broke down.,Financial or Transport Issue,Anxious
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Frustrated
+Clash with my internship schedule.,Work or Internship Commitment,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Neutral
+Not coming.,Unknown,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+"job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+Absent today.,Unknown,Neutral
+I won't be there.,Unknown,Frustrated
+Absent today.,Unknown,Sad
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Hopeful
+I have been feeling fever for the past few days.,Health Issue,Frustrated
+Can't make it to class.,Unknown,Neutral
+"Suffering from headache, doctor advised rest.",Health Issue,Stressed
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Stressed
+Can't make it to class.,Unknown,Frustrated
+couldn't afford the bus fare this week.,Financial or Transport Issue,Anxious
+Feeling very anxious about my performance. Sorry.,Mental Health or Anxiety,Hopeful
+Clash with my internship schedule.,Work or Internship Commitment,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Neutral
+Couldn't afford the bus fare this week. Sorry.,Financial or Transport Issue,Stressed
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Hopeful
+don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Absent today.,Unknown,Frustrated
+called into work unexpectedly.,Work or Internship Commitment,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+I won't be there.,Unknown,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+Not coming.,Unknown,Stressed
+not coming.,Unknown,Neutral
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+Called into work unexpectedly.,Work or Internship Commitment,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+Absent today.,Unknown,Anxious
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Hopeful
+I was sick with dengue and couldn't attend.,Health Issue,Stressed
+I have been feeling stomach pain for the past some time.,Health Issue,Hopeful
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+I was sick with flu and couldn't attend.,Health Issue,Hopeful
+Had to attend a family accident.,Family or Personal Issue,Neutral
+Had to attend a family wedding.,Family or Personal Issue,Stressed
+Family emergency came up suddenly.,Family or Personal Issue,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Anxious
+I have too many exams this week. Sorry.,Academic Stress or Low Interest,Demotivated
+Can't make it to class.,Unknown,Sad
+Social anxiety is making it hard to attend.,Peer or Social Issue,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+Social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Stressed
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+My bus broke down.,Financial or Transport Issue,Frustrated
+Mental health hasn't been great lately. Sorry.,Mental Health or Anxiety,Neutral
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+My bus broke down.,Financial or Transport Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+"Personal issues at home, taking few days off.",Family or Personal Issue,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Feeling isolated and bullied.,Peer or Social Issue,Frustrated
+"my brother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Frustrated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Anxious
+Family emergency came up suddenly. Sorry.,Family or Personal Issue,Neutral
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Frustrated
+"Personal issues at home, taking few days off.",Family or Personal Issue,Sad
+Mental health hasn't been great lately. Sorry.,Mental Health or Anxiety,Sad
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Anxious
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+"Personal issues at home, taking few days off.",Family or Personal Issue,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+Absent today.,Unknown,Hopeful
+Not coming.,Unknown,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+Having trouble with some classmates.,Peer or Social Issue,Frustrated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Neutral
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+"Diagnosed with food poisoning, need few days to recover.",Health Issue,Frustrated
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Stressed
+Can't make it to class. Sorry.,Unknown,Stressed
+"Suffering from headache, doctor advised rest.",Health Issue,Sad
+got into a fight with a friend.,Peer or Social Issue,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+Having trouble with some classmates.,Peer or Social Issue,Anxious
+Family emergency came up suddenly.,Family or Personal Issue,Sad
+clash with my internship schedule.,Work or Internship Commitment,Hopeful
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+Family emergency came up suddenly.,Family or Personal Issue,Hopeful
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+I won't be there.,Unknown,Stressed
+"having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+Can't make it to class.,Unknown,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+I have been feeling stomach pain for the past few days.,Health Issue,Anxious
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Neutral
+Got into a fight with a friend.,Peer or Social Issue,Neutral
+Absent today.,Unknown,Sad
+struggling to keep up with the coursework.,Academic Stress or Low Interest,Demotivated
+"Suffering from fever, doctor advised rest.",Health Issue,Frustrated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Frustrated
+Had to attend a family accident.,Family or Personal Issue,Frustrated
+Called into work unexpectedly.,Work or Internship Commitment,Hopeful
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Stressed
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Neutral
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+I won't be there.,Unknown,Sad
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+"Personal issues at home, taking some time off.",Family or Personal Issue,Hopeful
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Frustrated
+depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+I was sick with food poisoning and couldn't attend.,Health Issue,Hopeful
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Neutral
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+"Diagnosed with food poisoning, need few days to recover.",Health Issue,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Sad
+I won't be there.,Unknown,Demotivated
+Got into a fight with a friend.,Peer or Social Issue,Hopeful
+Having trouble with some classmates.,Peer or Social Issue,Hopeful
+I have too many exams this week.,Academic Stress or Low Interest,Stressed
+Had to attend a family wedding.,Family or Personal Issue,Stressed
+family emergency came up suddenly.,Family or Personal Issue,Hopeful
+"Suffering from fever, doctor advised rest.",Health Issue,Sad
+"suffering from severe cold, doctor advised rest.",Health Issue,Sad
+Feeling overwhelmed with the history assignments.,Academic Stress or Low Interest,Hopeful
+Had to attend a family accident.,Family or Personal Issue,Sad
+Had to attend a family wedding.,Family or Personal Issue,Stressed
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Neutral
+Absent today. Sorry.,Unknown,Anxious
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Got into a fight with a friend.,Peer or Social Issue,Sad
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+I was sick with flu and couldn't attend.,Health Issue,Demotivated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Hopeful
+Can't make it to class.,Unknown,Frustrated
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+I won't be there.,Unknown,Hopeful
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+Can't make it to class.,Unknown,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+I have been feeling headache for the past 2 days.,Health Issue,Frustrated
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Sad
+My bike broke down.,Financial or Transport Issue,Anxious
+"Diagnosed with food poisoning, need few days to recover.",Health Issue,Hopeful
+Can't make it to class.,Unknown,Anxious
+Clash with my internship schedule.,Work or Internship Commitment,Neutral
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+"Diagnosed with dengue, need a week to recover.",Health Issue,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Hopeful
+I won't be there.,Unknown,Anxious
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Got into a fight with a friend.,Peer or Social Issue,Neutral
+Can't make it to class.,Unknown,Demotivated
+"Diagnosed with flu, need some time to recover.",Health Issue,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Demotivated
+Having trouble with some classmates.,Peer or Social Issue,Sad
+Can't make it to class. Sorry.,Unknown,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Can't make it to class.,Unknown,Sad
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Sad
+"personal issues at home, taking a week off.",Family or Personal Issue,Hopeful
+"Diagnosed with dengue, need a week to recover.",Health Issue,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+Mental health hasn't been great lately.,Mental Health or Anxiety,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Demotivated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Hopeful
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+Not coming.,Unknown,Neutral
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+"Diagnosed with flu, need 2 days to recover. Sorry.",Health Issue,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Called into work unexpectedly. Sorry.,Work or Internship Commitment,Hopeful
+"Diagnosed with dengue, need some time to recover.",Health Issue,Anxious
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+can't make it to class.,Unknown,Neutral
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Had to attend a family gathering.,Family or Personal Issue,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Demotivated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Anxious
+Can't make it to class.,Unknown,Anxious
+absent today.,Unknown,Sad
+"My father is unwell, need to take care of them.",Family or Personal Issue,Hopeful
+Not coming.,Unknown,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+Had to attend a family funeral.,Family or Personal Issue,Demotivated
+Feeling very anxious about my performance.,Mental Health or Anxiety,Neutral
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+I won't be there.,Unknown,Stressed
+Can't make it to class.,Unknown,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+I have too many exams this week.,Academic Stress or Low Interest,Neutral
+My car broke down.,Financial or Transport Issue,Anxious
+Clash with my internship schedule. Sorry.,Work or Internship Commitment,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Anxious
+"Diagnosed with food poisoning, need few days to recover.",Health Issue,Neutral
+"personal issues at home, taking some time off. Sorry.",Family or Personal Issue,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Hopeful
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+Family emergency came up suddenly. Sorry.,Family or Personal Issue,Hopeful
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Hopeful
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+Struggling to keep up with the coursework. Sorry.,Academic Stress or Low Interest,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+"Job interview today, couldn't attend.",Work or Internship Commitment,Sad
+My bus broke down.,Financial or Transport Issue,Sad
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Sad
+social anxiety is making it hard to attend. Sorry.,Peer or Social Issue,Hopeful
+Absent today.,Unknown,Demotivated
+I have been feeling fever for the past 2 days.,Health Issue,Anxious
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Frustrated
+I have too many exams this week. Sorry.,Academic Stress or Low Interest,Anxious
+Can't make it to class.,Unknown,Neutral
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Frustrated
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+absent today.,Unknown,Stressed
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Anxious
+Feeling overwhelmed with the history assignments.,Academic Stress or Low Interest,Anxious
+I have too many exams this week.,Academic Stress or Low Interest,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+Can't make it to class.,Unknown,Stressed
+Not coming.,Unknown,Demotivated
+Not coming.,Unknown,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+Called into work unexpectedly.,Work or Internship Commitment,Demotivated
+Can't make it to class.,Unknown,Stressed
+My car broke down.,Financial or Transport Issue,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Had to attend a family wedding.,Family or Personal Issue,Demotivated
+I have too many exams this week.,Academic Stress or Low Interest,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+"Suffering from severe cold, doctor advised rest.",Health Issue,Neutral
+I was sick with covid and couldn't attend.,Health Issue,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+don't find the classes interesting anymore.,Academic Stress or Low Interest,Frustrated
+Clash with my internship schedule.,Work or Internship Commitment,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+Called into work unexpectedly.,Work or Internship Commitment,Frustrated
+"Personal issues at home, taking a week off.",Family or Personal Issue,Stressed
+called into work unexpectedly.,Work or Internship Commitment,Neutral
+i won't be there.,Unknown,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+Feeling isolated and bullied.,Peer or Social Issue,Anxious
+Family emergency came up suddenly.,Family or Personal Issue,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Clash with my internship schedule.,Work or Internship Commitment,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+"Diagnosed with food poisoning, need some time to recover.",Health Issue,Frustrated
+I have been feeling fever for the past few days.,Health Issue,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Frustrated
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+My bus broke down.,Financial or Transport Issue,Stressed
+I have too many exams this week.,Academic Stress or Low Interest,Sad
+Not coming. Sorry.,Unknown,Frustrated
+Got into a fight with a friend.,Peer or Social Issue,Stressed
+Social anxiety is making it hard to attend.,Peer or Social Issue,Neutral
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Sad
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Neutral
+"Suffering from fever, doctor advised rest.",Health Issue,Anxious
+Not coming.,Unknown,Anxious
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Anxious
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Hopeful
+I won't be there.,Unknown,Neutral
+Can't make it to class.,Unknown,Stressed
+"Personal issues at home, taking some time off.",Family or Personal Issue,Neutral
+"Job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+had to attend a family wedding.,Family or Personal Issue,Sad
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+i have too many exams this week.,Academic Stress or Low Interest,Stressed
+Got into a fight with a friend.,Peer or Social Issue,Anxious
+Can't make it to class.,Unknown,Anxious
+I was sick with dengue and couldn't attend.,Health Issue,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Hopeful
+depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Neutral
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+I was sick with food poisoning and couldn't attend.,Health Issue,Hopeful
+Not coming.,Unknown,Neutral
+Don't find the classes interesting anymore. Sorry.,Academic Stress or Low Interest,Hopeful
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+My bus broke down.,Financial or Transport Issue,Stressed
+I was sick with food poisoning and couldn't attend.,Health Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Hopeful
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+I have too many exams this week.,Academic Stress or Low Interest,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+"having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+My train broke down.,Financial or Transport Issue,Demotivated
+I won't be there.,Unknown,Stressed
+family emergency came up suddenly.,Family or Personal Issue,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+stuck in traffic for hours due to wedding.,Financial or Transport Issue,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Sad
+I was sick with covid and couldn't attend.,Health Issue,Anxious
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+Got into a fight with a friend.,Peer or Social Issue,Frustrated
+had to attend a family funeral.,Family or Personal Issue,Neutral
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Anxious
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Neutral
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Demotivated
+had to work a double shift at my job.,Work or Internship Commitment,Stressed
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Neutral
+Got into a fight with a friend.,Peer or Social Issue,Hopeful
+Feeling very anxious about my performance.,Mental Health or Anxiety,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Stressed
+depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Neutral
+Mental health hasn't been great lately.,Mental Health or Anxiety,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+Can't make it to class.,Unknown,Frustrated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Sad
+Had to attend a family wedding.,Family or Personal Issue,Neutral
+My car broke down.,Financial or Transport Issue,Frustrated
+I won't be there.,Unknown,Hopeful
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+Had to attend a family funeral.,Family or Personal Issue,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+"Suffering from headache, doctor advised rest.",Health Issue,Frustrated
+Feeling overwhelmed with the programming assignments.,Academic Stress or Low Interest,Anxious
+"Suffering from severe cold, doctor advised rest.",Health Issue,Demotivated
+Feeling isolated and bullied.,Peer or Social Issue,Neutral
+"Personal issues at home, taking some time off.",Family or Personal Issue,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Anxious
+"Suffering from fever, doctor advised rest.",Health Issue,Demotivated
+Got into a fight with a friend.,Peer or Social Issue,Sad
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Demotivated
+Family emergency came up suddenly.,Family or Personal Issue,Frustrated
+I was sick with flu and couldn't attend.,Health Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Demotivated
+Not coming.,Unknown,Neutral
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+"Personal issues at home, taking few days off.",Family or Personal Issue,Anxious
+Feeling isolated and bullied.,Peer or Social Issue,Stressed
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Sad
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Anxious
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+Not coming.,Unknown,Stressed
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Anxious
+I have too many exams this week.,Academic Stress or Low Interest,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+My bike broke down.,Financial or Transport Issue,Anxious
+i have too many exams this week.,Academic Stress or Low Interest,Anxious
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Demotivated
+I have too many exams this week.,Academic Stress or Low Interest,Sad
+I have been feeling stomach pain for the past 2 days.,Health Issue,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Anxious
+I was sick with flu and couldn't attend.,Health Issue,Stressed
+Family emergency came up suddenly.,Family or Personal Issue,Demotivated
+having trouble with some classmates. Sorry.,Peer or Social Issue,Sad
+Stuck in traffic for hours due to gathering.,Financial or Transport Issue,Sad
+Got into a fight with a friend.,Peer or Social Issue,Anxious
+Had to attend a family wedding.,Family or Personal Issue,Anxious
+I have too many exams this week.,Academic Stress or Low Interest,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Hopeful
+Had to attend a family accident.,Family or Personal Issue,Demotivated
+I was sick with flu and couldn't attend.,Health Issue,Anxious
+"Diagnosed with food poisoning, need some time to recover.",Health Issue,Hopeful
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+"having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Hopeful
+Feeling very anxious about my performance. Sorry.,Mental Health or Anxiety,Frustrated
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Sad
+My bike broke down.,Financial or Transport Issue,Sad
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Anxious
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Neutral
+I have too many exams this week.,Academic Stress or Low Interest,Hopeful
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+social anxiety is making it hard to attend.,Peer or Social Issue,Anxious
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Neutral
+had to work a double shift at my job.,Work or Internship Commitment,Neutral
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+i have been feeling severe cold for the past some time.,Health Issue,Frustrated
+"Diagnosed with covid, need 2 days to recover.",Health Issue,Anxious
+I have been feeling fever for the past 2 days.,Health Issue,Hopeful
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+absent today.,Unknown,Anxious
+Had to attend a family wedding.,Family or Personal Issue,Stressed
+Clash with my internship schedule. Sorry.,Work or Internship Commitment,Anxious
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Clash with my internship schedule.,Work or Internship Commitment,Neutral
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+Had to attend a family wedding.,Family or Personal Issue,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Frustrated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Frustrated
+Can't make it to class.,Unknown,Neutral
+Had to attend a family funeral.,Family or Personal Issue,Hopeful
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Demotivated
+I won't be there.,Unknown,Hopeful
+Feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+Called into work unexpectedly.,Work or Internship Commitment,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Absent today.,Unknown,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Frustrated
+I have been feeling stomach pain for the past some time.,Health Issue,Anxious
+I was sick with flu and couldn't attend.,Health Issue,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Couldn't afford the bus fare this week. Sorry.,Financial or Transport Issue,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+family emergency came up suddenly.,Family or Personal Issue,Demotivated
+Had to attend a family wedding.,Family or Personal Issue,Anxious
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Demotivated
+I have been feeling headache for the past few days. Sorry.,Health Issue,Sad
+couldn't afford the bus fare this week.,Financial or Transport Issue,Frustrated
+Can't make it to class.,Unknown,Frustrated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Anxious
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+Social anxiety is making it hard to attend.,Peer or Social Issue,Neutral
+Social anxiety is making it hard to attend.,Peer or Social Issue,Neutral
+"Personal issues at home, taking few days off.",Family or Personal Issue,Sad
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+"Having a panic attack, couldn't make it. Sorry.",Mental Health or Anxiety,Anxious
+Feeling very anxious about my performance.,Mental Health or Anxiety,Stressed
+I was sick with covid and couldn't attend. Sorry.,Health Issue,Stressed
+Got into a fight with a friend.,Peer or Social Issue,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Sad
+"Suffering from severe cold, doctor advised rest.",Health Issue,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+Family emergency came up suddenly.,Family or Personal Issue,Neutral
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Demotivated
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+couldn't afford the bus fare this week.,Financial or Transport Issue,Sad
+Having trouble with some classmates.,Peer or Social Issue,Stressed
+Mental health hasn't been great lately.,Mental Health or Anxiety,Demotivated
+"having some money issues, need to work extra shifts.",Financial or Transport Issue,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Having trouble with some classmates.,Peer or Social Issue,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Neutral
+Feeling overwhelmed with the science assignments.,Academic Stress or Low Interest,Neutral
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Frustrated
+I won't be there.,Unknown,Neutral
+I won't be there.,Unknown,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Sad
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Sad
+Couldn't afford the bus fare this week. Sorry.,Financial or Transport Issue,Neutral
+Called into work unexpectedly.,Work or Internship Commitment,Stressed
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+Called into work unexpectedly.,Work or Internship Commitment,Sad
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Sad
+Had to work a double shift at my job.,Work or Internship Commitment,Frustrated
+"Suffering from stomach pain, doctor advised rest.",Health Issue,Stressed
+I have too many exams this week.,Academic Stress or Low Interest,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+Clash with my internship schedule.,Work or Internship Commitment,Hopeful
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Stressed
+Feeling isolated and bullied.,Peer or Social Issue,Stressed
+Can't make it to class.,Unknown,Hopeful
+Clash with my internship schedule.,Work or Internship Commitment,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Neutral
+"Diagnosed with food poisoning, need a week to recover.",Health Issue,Anxious
+Feeling overwhelmed with the programming assignments. Sorry.,Academic Stress or Low Interest,Anxious
+Feeling very anxious about my performance.,Mental Health or Anxiety,Frustrated
+Not coming.,Unknown,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Demotivated
+Called into work unexpectedly.,Work or Internship Commitment,Neutral
+Had to attend a family wedding.,Family or Personal Issue,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Stressed
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Neutral
+I have too many exams this week.,Academic Stress or Low Interest,Anxious
+Can't make it to class.,Unknown,Stressed
+"job interview today, couldn't attend.",Work or Internship Commitment,Hopeful
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Frustrated
+Depressed and unable to leave the house. Sorry.,Mental Health or Anxiety,Hopeful
+clash with my internship schedule.,Work or Internship Commitment,Stressed
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+"Suffering from headache, doctor advised rest.",Health Issue,Hopeful
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Demotivated
+My train broke down.,Financial or Transport Issue,Frustrated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Hopeful
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Stressed
+I have been feeling severe cold for the past few days.,Health Issue,Frustrated
+Can't make it to class.,Unknown,Neutral
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Sad
+Called into work unexpectedly.,Work or Internship Commitment,Hopeful
+My car broke down.,Financial or Transport Issue,Neutral
+Family emergency came up suddenly.,Family or Personal Issue,Stressed
+"My sister is unwell, need to take care of them.",Family or Personal Issue,Stressed
+had to attend a family accident.,Family or Personal Issue,Demotivated
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+Absent today. Sorry.,Unknown,Hopeful
+My car broke down.,Financial or Transport Issue,Neutral
+I won't be there.,Unknown,Frustrated
+Had to attend a family wedding.,Family or Personal Issue,Anxious
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Hopeful
+feeling isolated and bullied.,Peer or Social Issue,Anxious
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Sad
+Depressed and unable to leave the house.,Mental Health or Anxiety,Demotivated
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Sad
+Feeling very anxious about my performance.,Mental Health or Anxiety,Demotivated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Anxious
+Can't make it to class.,Unknown,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Demotivated
+Family emergency came up suddenly.,Family or Personal Issue,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Hopeful
+Feeling isolated and bullied.,Peer or Social Issue,Sad
+Having trouble with some classmates.,Peer or Social Issue,Neutral
+Having trouble with some classmates.,Peer or Social Issue,Anxious
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Frustrated
+I have too many exams this week.,Academic Stress or Low Interest,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Stressed
+Clash with my internship schedule.,Work or Internship Commitment,Anxious
+I was sick with flu and couldn't attend.,Health Issue,Demotivated
+i have been feeling fever for the past some time.,Health Issue,Sad
+Mental health hasn't been great lately.,Mental Health or Anxiety,Sad
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+I won't be there.,Unknown,Demotivated
+family emergency came up suddenly. Sorry.,Family or Personal Issue,Stressed
+"My father is unwell, need to take care of them.",Family or Personal Issue,Sad
+Having trouble with some classmates.,Peer or Social Issue,Hopeful
+Feeling very anxious about my performance.,Mental Health or Anxiety,Hopeful
+"Personal issues at home, taking some time off.",Family or Personal Issue,Sad
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Frustrated
+"Having some money issues, need to work extra shifts.",Financial or Transport Issue,Hopeful
+I have too many exams this week.,Academic Stress or Low Interest,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Hopeful
+Feeling very anxious about my performance.,Mental Health or Anxiety,Neutral
+Don't find the classes interesting anymore.,Academic Stress or Low Interest,Neutral
+absent today.,Unknown,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Anxious
+Got into a fight with a friend.,Peer or Social Issue,Hopeful
+Family emergency came up suddenly.,Family or Personal Issue,Anxious
+Absent today.,Unknown,Hopeful
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+"My mother is unwell, need to take care of them.",Family or Personal Issue,Anxious
+can't make it to class.,Unknown,Anxious
+Can't make it to class.,Unknown,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Demotivated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Stressed
+"Job interview today, couldn't attend.",Work or Internship Commitment,Neutral
+Stuck in traffic for hours due to accident.,Financial or Transport Issue,Frustrated
+"Diagnosed with covid, need a week to recover.",Health Issue,Neutral
+Feeling very anxious about my performance.,Mental Health or Anxiety,Anxious
+"Job interview today, couldn't attend.",Work or Internship Commitment,Demotivated
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Demotivated
+Mental health hasn't been great lately.,Mental Health or Anxiety,Neutral
+Can't make it to class.,Unknown,Neutral
+My bike broke down.,Financial or Transport Issue,Sad
+"Having some money issues, need to work extra shifts. Sorry.",Financial or Transport Issue,Stressed
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Stressed
+Having trouble with some classmates.,Peer or Social Issue,Demotivated
+Had to attend a family gathering.,Family or Personal Issue,Stressed
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Hopeful
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Neutral
+Got into a fight with a friend.,Peer or Social Issue,Sad
+Can't make it to class.,Unknown,Stressed
+"Suffering from headache, doctor advised rest.",Health Issue,Anxious
+Absent today.,Unknown,Stressed
+Had to work a double shift at my job.,Work or Internship Commitment,Sad
+Clash with my internship schedule.,Work or Internship Commitment,Neutral
+Absent today.,Unknown,Frustrated
+Social anxiety is making it hard to attend.,Peer or Social Issue,Demotivated
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Stressed
+Can't make it to class.,Unknown,Frustrated
+Absent today.,Unknown,Neutral
+"Having a panic attack, couldn't make it.",Mental Health or Anxiety,Frustrated
+depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+"my sister is unwell, need to take care of them.",Family or Personal Issue,Stressed
+I was sick with flu and couldn't attend.,Health Issue,Stressed
+Stuck in traffic for hours due to funeral.,Financial or Transport Issue,Stressed
+family emergency came up suddenly.,Family or Personal Issue,Sad
+I have too many exams this week.,Academic Stress or Low Interest,Hopeful
+"Personal issues at home, taking 2 days off.",Family or Personal Issue,Sad
+Feeling isolated and bullied.,Peer or Social Issue,Hopeful
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Demotivated
+Absent today.,Unknown,Frustrated
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+Got into a fight with a friend.,Peer or Social Issue,Demotivated
+Clash with my internship schedule. Sorry.,Work or Internship Commitment,Demotivated
+Had to work a double shift at my job.,Work or Internship Commitment,Stressed
+Struggling to keep up with the coursework.,Academic Stress or Low Interest,Frustrated
+Depressed and unable to leave the house.,Mental Health or Anxiety,Stressed
+Not coming.,Unknown,Hopeful
+Feeling very anxious about my performance.,Mental Health or Anxiety,Hopeful
+Depressed and unable to leave the house.,Mental Health or Anxiety,Frustrated
+Had to attend a family funeral.,Family or Personal Issue,Neutral
+Absent today.,Unknown,Anxious
+Stuck in traffic for hours due to wedding.,Financial or Transport Issue,Sad
+Feeling overwhelmed with the math assignments.,Academic Stress or Low Interest,Stressed
+Family emergency came up suddenly. Sorry.,Family or Personal Issue,Anxious
+I won't be there.,Unknown,Demotivated
+Absent today.,Unknown,Anxious
+I won't be there.,Unknown,Hopeful
+Couldn't afford the bus fare this week.,Financial or Transport Issue,Anxious
+I have too many exams this week.,Academic Stress or Low Interest,Demotivated
+Can't make it to class.,Unknown,Sad
+"My brother is unwell, need to take care of them.",Family or Personal Issue,Demotivated
+"My mother is unwell, need to take care of them. Sorry.",Family or Personal Issue,Frustrated
+Can't make it to class.,Unknown,Stressed
+I won't be there.,Unknown,Sad

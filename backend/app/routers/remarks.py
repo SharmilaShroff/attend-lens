@@ -27,7 +27,13 @@ def add_remark(body: RemarkCreate, user: User = Depends(get_current_user), db: S
 
 @router.get("/student/{student_id}", response_model=list[RemarkOut])
 def get_student_remarks(student_id: int, user: User = Depends(get_current_user), db: Session = Depends(get_db)):
-    remarks = db.query(Remark).filter(Remark.student_id == student_id).order_by(Remark.created_at.desc()).all()
+    query = db.query(Remark).filter(Remark.student_id == student_id)
+    
+    # Counselling summaries are visible only to mentors/teachers, not on student dashboard
+    if user.role == "student":
+        query = query.filter(~Remark.text.contains("Counselling Summary"))
+        
+    remarks = query.order_by(Remark.created_at.desc()).all()
     res = []
     for r in remarks:
         out = RemarkOut.model_validate(r)
@@ -35,3 +41,4 @@ def get_student_remarks(student_id: int, user: User = Depends(get_current_user),
         out.author_name = u.name if u else "Staff"
         res.append(out)
     return res
+

@@ -15,3 +15,5 @@ scikit-learn==1.5.*
 openpyxl
 apscheduler==3.10.*
 anthropic
+joblib
+pyyaml>=6.0

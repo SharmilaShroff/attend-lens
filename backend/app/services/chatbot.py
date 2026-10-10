@@ -1,5 +1,5 @@
 """
-Grounded AI Chatbot Service for Attend Lens.
+General-Purpose Generative AI Chatbot Service for Attend Lens.
 Powered by OpenRouter API via openrouter_client helper.
 """
 from typing import Optional
@@ -11,91 +11,75 @@ from app.services.openrouter_client import call_openrouter, is_openrouter_config
 settings = get_settings()
 
 
-
 def answer_chatbot_query(db: Session, user_id: int, question: str, student_id: Optional[int] = None) -> str:
     """
-    Answers chatbot queries strictly using real class attendance data from DB.
-    If student_id is provided, includes that student's details as focused context.
+    General-purpose AI assistant for Attend Lens.
+    Responds to ALL types of queries (general knowledge, study help, writing, coding, advice, casual chat).
+    Includes real class attendance data as optional context to use when attendance questions are asked.
     """
     if not is_openrouter_configured():
         return "AI features are not configured. Please add OPENROUTER_API_KEY to backend .env"
 
-    # Find relevant class
-    student = None
-    if student_id:
-        student = db.query(Student).filter(Student.id == student_id).first()
+    context_prompt = ""
+    try:
+        student = None
+        if student_id:
+            student = db.query(Student).filter(Student.id == student_id).first()
 
-    if not student:
-        # Fallback to first available student/class
-        student = db.query(Student).first()
+        if not student:
+            student = db.query(Student).first()
 
-    if not student:
-        return "No class or student attendance data available in database."
+        if student:
+            classroom = db.query(ClassRoom).filter(ClassRoom.id == student.class_id).first()
+            class_name = classroom.name if classroom else "Current Class"
+            class_students = db.query(Student).filter(Student.class_id == student.class_id).all()
+            subjects = db.query(Subject).filter(Subject.class_id == student.class_id).all()
+            sub_map = {s.id: f"{s.name} ({s.code})" for s in subjects}
 
-    classroom = db.query(ClassRoom).filter(ClassRoom.id == student.class_id).first()
-    class_name = classroom.name if classroom else "Current Class"
+            student_summaries = []
+            for cs in class_students[:30]:
+                recs = db.query(Attendance).filter(Attendance.student_id == cs.id).all()
+                tot = len(recs)
+                att = sum(1 for r in recs if r.status == AttendanceStatus.present)
+                pct = (att / tot * 100.0) if tot > 0 else 100.0
+                student_summaries.append(f"- {cs.name} ({cs.usn}): Overall {pct:.1f}%")
 
-    # Fetch all students in class
-    class_students = db.query(Student).filter(Student.class_id == student.class_id).all()
-    subjects = db.query(Subject).filter(Subject.class_id == student.class_id).all()
-    sub_map = {s.id: f"{s.name} ({s.code})" for s in subjects}
+            focused_student_str = ""
+            if student_id:
+                f_recs = db.query(Attendance).filter(Attendance.student_id == student_id).all()
+                f_tot = len(f_recs)
+                f_att = sum(1 for r in f_recs if r.status == AttendanceStatus.present)
+                f_pct = (f_att / f_tot * 100.0) if f_tot > 0 else 100.0
+                focused_student_str = f"\nFocused Student Context: {student.name} ({student.usn}) - Overall Attendance: {f_pct:.1f}%\n"
 
-    # Summary of all students in class
-    student_summaries = []
-    for cs in class_students:
-        recs = db.query(Attendance).filter(Attendance.student_id == cs.id).all()
-        tot = len(recs)
-        att = sum(1 for r in recs if r.status == AttendanceStatus.present)
-        pct = (att / tot * 100.0) if tot > 0 else 100.0
-
-        # Sub breakdowns
-        sub_pcts = []
-        for s in subjects:
-            s_recs = [r for r in recs if r.subject_id == s.id]
-            s_tot = len(s_recs)
-            s_att = sum(1 for r in s_recs if r.status == AttendanceStatus.present)
-            s_pct = (s_att / s_tot * 100.0) if s_tot > 0 else 100.0
-            sub_pcts.append(f"{s.code}: {s_pct:.1f}%")
-
-        student_summaries.append(
-            f"- {cs.name} (USN: {cs.usn}): Overall {pct:.1f}% [{', '.join(sub_pcts)}]"
-        )
-
-    focused_student_str = ""
-    if student_id:
-        focus_student = db.query(Student).filter(Student.id == student_id).first()
-        if focus_student:
-            f_recs = db.query(Attendance).filter(Attendance.student_id == student_id).all()
-            f_tot = len(f_recs)
-            f_att = sum(1 for r in f_recs if r.status == AttendanceStatus.present)
-            f_pct = (f_att / f_tot * 100.0) if f_tot > 0 else 100.0
-            focused_student_str = f"\nFOCUSED STUDENT CONTEXT:\nName: {focus_student.name} (USN: {focus_student.usn}), Overall Attendance: {f_pct:.1f}%\n"
-
-    context_prompt = (
-        f"CLASS DATA ({class_name}):\n"
-        f"Attendance Threshold Cutoff: {settings.ATTENDANCE_THRESHOLD}%\n"
-        f"Total Students: {len(class_students)}\n"
-        f"Subjects: {', '.join(sub_map.values())}\n"
-        + focused_student_str +
-        "ROSTER DATA:\n" +
-        "\n".join(student_summaries[:35])  # Cap at 35 students to stay well within token limits
-    )
+            context_prompt = (
+                f"\n--- OPTIONAL ATTENDANCE CONTEXT ---\n"
+                f"Class: {class_name}, Threshold Cutoff: {settings.ATTENDANCE_THRESHOLD}%\n"
+                f"Subjects: {', '.join(sub_map.values())}\n"
+                + focused_student_str +
+                "Class Roster Summary:\n" + "\n".join(student_summaries) + "\n"
+                f"-----------------------------------\n\n"
+            )
+    except Exception as e:
+        print(f"[Chatbot Context Error] {e}")
 
     system_prompt = (
-        "You are Attend Lens AI Assistant. Answer the user's question accurately using ONLY the provided real class attendance data. "
-        "Do NOT invent any student data or numbers not present in the prompt. If the data does not contain the answer, "
-        "explicitly state 'I do not have enough data to answer that based on the class records.' "
-        "Answer questions like 'Who is below 50%?', 'Which subject has lowest average?', 'Compare Student A and Student B', "
-        "'What should I tell mentor about student X?', 'Is he eligible for the exam?'. Keep answers short, clear, and use bullet points or markdown tables when helpful."
+        "You are Attend Lens AI Assistant, a friendly, intelligent, and versatile general-purpose AI assistant.\n"
+        "You respond helpfully to ALL types of user questions and prompts, including general knowledge, study guidance, "
+        "writing help, coding assistance, problem-solving, advice, casual chat, and student academic performance.\n"
+        "If the user asks about attendance, subject averages, exam eligibility, or class statistics, use the provided "
+        "Optional Attendance Context to give accurate answers. For all other general topics, answer freely and knowledgeably "
+        "without restricting your responses to attendance."
     )
 
-    full_user_prompt = f"{context_prompt}\n\nUser Question: {question}"
+    full_user_prompt = f"{context_prompt}User Question: {question}"
 
-    res, err = call_openrouter(full_user_prompt, system_prompt=system_prompt, json_mode=False, timeout_seconds=12)
+    res, err = call_openrouter(full_user_prompt, system_prompt=system_prompt, json_mode=False, timeout_seconds=15)
 
     if err:
         return f"AI Service Notice: {err}"
     if res:
         return str(res)
 
-    return "Unable to process AI chatbot query. Please try again."
+    return "Couldn't generate a reply, please try again."
+

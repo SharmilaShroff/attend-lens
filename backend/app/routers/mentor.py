@@ -40,7 +40,23 @@ def create_class(body: ClassCreate, mentor: Mentor = Depends(require_mentor), db
     db.add(c)
     db.commit()
     db.refresh(c)
+
+    # Auto-create core distinct subjects for class attendance graphs
+    sem = body.semester or 6
+    default_subjects = [
+        ("Database Management Systems", f"CS{sem}01"),
+        ("Machine Learning", f"CS{sem}02"),
+        ("Computer Networks", f"CS{sem}03"),
+        ("Web Technologies", f"CS{sem}04"),
+        ("Software Engineering", f"CS{sem}05")
+    ]
+    for sub_name, sub_code in default_subjects:
+        sub = Subject(class_id=c.id, name=sub_name, code=sub_code)
+        db.add(sub)
+    db.commit()
+
     return ClassOut.model_validate(c)
+
 
 
 @router.get("/classes", response_model=list[ClassOut])

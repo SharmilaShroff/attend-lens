@@ -303,3 +303,77 @@ class Exam(Base):
     subject_ids: Mapped[list] = mapped_column(JSON, nullable=False)  # List of subject IDs covered
     created_at: Mapped[datetime] = _ts()
 
+
+class FollowUpStatus(str, enum.Enum):
+    pending = "pending"
+    student_emailed = "student_emailed"
+    responded = "responded"
+    parent_emailed = "parent_emailed"
+    failed = "failed"
+    cancelled = "cancelled"
+
+
+class AbsenceFollowUp(Base):
+    """Absence follow-up tracking student email, 24h wait, response detection, and parent escalation."""
+    __tablename__ = "absence_followups"
+    __table_args__ = (
+        UniqueConstraint("student_id", "absence_date", name="uq_student_absence_date"),
+        Index("ix_followup_student_date", "student_id", "absence_date"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    student_id: Mapped[int] = mapped_column(ForeignKey("students.id", ondelete="CASCADE"), index=True)
+    absence_date: Mapped[date] = mapped_column(Date, nullable=False)
+    subject_ids: Mapped[list] = mapped_column(JSON, default=list)  # Subject IDs absent on this date
+    status: Mapped[FollowUpStatus] = mapped_column(Enum(FollowUpStatus), default=FollowUpStatus.pending, index=True)
+    token: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    token_expires_at: Mapped[datetime | None] = mapped_column(DateTime)
+    student_email_sent_at: Mapped[datetime | None] = mapped_column(DateTime)
+    parent_email_sent_at: Mapped[datetime | None] = mapped_column(DateTime)
+    responded_at: Mapped[datetime | None] = mapped_column(DateTime)
+    response_source: Mapped[str | None] = mapped_column(String(50))  # submit_absence | counselling_inbox | email_link
+    retry_count: Mapped[int] = mapped_column(Integer, default=0)
+    last_error: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = _ts()
+    updated_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), onupdate=func.now())
+
+    student: Mapped[Student] = relationship()
+
+
+class QueueRecipientType(str, enum.Enum):
+    student = "student"
+    parent = "parent"
+
+
+class QueueStatus(str, enum.Enum):
+    pending = "pending"
+    sent = "sent"
+    failed = "failed"
+    skipped = "skipped"
+
+
+class EmailQueue(Base):
+    """Database-backed queue for immediate absence email notifications."""
+    __tablename__ = "email_queue"
+    __table_args__ = (
+        Index("ix_email_queue_student_type_date", "student_id", "recipient_type", "absence_date"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    student_id: Mapped[int] = mapped_column(ForeignKey("students.id", ondelete="CASCADE"), index=True)
+    recipient_type: Mapped[QueueRecipientType] = mapped_column(Enum(QueueRecipientType), nullable=False)
+    recipient_email: Mapped[str | None] = mapped_column(String(190))
+    absence_date: Mapped[date] = mapped_column(Date, nullable=False)
+    subject_ids: Mapped[list] = mapped_column(JSON, default=list)
+    teacher_name: Mapped[str | None] = mapped_column(String(120))
+    status: Mapped[QueueStatus] = mapped_column(Enum(QueueStatus), default=QueueStatus.pending, index=True)
+    sent_at: Mapped[datetime | None] = mapped_column(DateTime)
+    retry_count: Mapped[int] = mapped_column(Integer, default=0)
+    last_error: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = _ts()
+    updated_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), onupdate=func.now())
+
+    student: Mapped[Student] = relationship()
+
+
+

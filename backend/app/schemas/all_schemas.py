@@ -306,6 +306,7 @@ class CounsellingCaseOut(BaseModel):
     resolved_at: Optional[datetime] = None
     created_at: datetime
     messages: list[CounsellingMessageOut] = []
+    ml_analysis: Optional[dict[str, Any]] = None
 
     class Config:
         from_attributes = True

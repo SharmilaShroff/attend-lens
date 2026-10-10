@@ -8,7 +8,7 @@ from app.database import engine, Base
 from app.scheduler import start_scheduler
 from app.routers import (
     auth, mentor, teacher, student, alerts, remarks, counselling,
-    interventions, analytics, chatbot
+    interventions, analytics, chatbot, ml_counsel, absence_followup
 )
 
 settings = get_settings()
@@ -49,6 +49,9 @@ app.include_router(counselling.router)
 app.include_router(interventions.router)
 app.include_router(analytics.router)
 app.include_router(chatbot.router)
+app.include_router(ml_counsel.router)
+app.include_router(absence_followup.router)
+
 
 
 @app.get("/", tags=["meta"])

@@ -1,8 +1,8 @@
 from datetime import date
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks
 from sqlalchemy.orm import Session
 
-from app.database import get_db
+from app.database import get_db, SessionLocal
 from app.deps import get_current_user
 from app.models.models import (
     User, Teacher, ClassRoom, Subject, TeacherClassSubject, Attendance,
@@ -12,8 +12,19 @@ from app.schemas.all_schemas import (
     AttendanceMarkRequest, AttendanceOut, AttendanceAuditLogOut, ClassOut
 )
 from app.services.analytics import run_analytics_for_student
+from app.services.absence_followup import queue_immediate_absence_emails, process_email_queue
 
 router = APIRouter(prefix="/teacher", tags=["teacher"])
+
+
+def _bg_process_email_queue():
+    db = SessionLocal()
+    try:
+        process_email_queue(db)
+    except Exception as e:
+        print(f"[BG EMAIL QUEUE ERROR] {e}")
+    finally:
+        db.close()
 
 
 def require_teacher(user: User = Depends(get_current_user), db: Session = Depends(get_db)) -> Teacher:
@@ -62,13 +73,26 @@ def get_teacher_selected_classes(teacher: Teacher = Depends(require_teacher), db
 @router.post("/select-class/{class_id}", status_code=200)
 def select_class(class_id: int, teacher: Teacher = Depends(require_teacher), db: Session = Depends(get_db)):
     subjects = db.query(Subject).filter(Subject.class_id == class_id).all()
-    if not subjects:
-        # Create a default subject mapping if none exist
-        sub = Subject(class_id=class_id, name="General Subject", code=f"GEN-{class_id}")
-        db.add(sub)
-        db.commit()
-        db.refresh(sub)
-        subjects = [sub]
+    if not subjects or (len(subjects) == 1 and subjects[0].name == "General Subject"):
+        # Remove old single 'General Subject' placeholder if present
+        if subjects and len(subjects) == 1 and subjects[0].name == "General Subject":
+            db.delete(subjects[0])
+            db.commit()
+
+        default_subjects = [
+            ("Database Management Systems", "CS601"),
+            ("Machine Learning", "CS602"),
+            ("Computer Networks", "CS603"),
+            ("Web Technologies", "CS604"),
+            ("Software Engineering", "CS605")
+        ]
+        subjects = []
+        for name, code in default_subjects:
+            sub = Subject(class_id=class_id, name=name, code=code)
+            db.add(sub)
+            db.commit()
+            db.refresh(sub)
+            subjects.append(sub)
 
     for sub in subjects:
         existing = db.query(TeacherClassSubject).filter(
@@ -85,7 +109,8 @@ def select_class(class_id: int, teacher: Teacher = Depends(require_teacher), db:
             )
             db.add(tcs)
     db.commit()
-    return {"message": "Class selected successfully"}
+    return {"message": "Class selected successfully with separate subjects"}
+
 
 
 @router.delete("/remove-class/{class_id}", status_code=200)
@@ -100,8 +125,14 @@ def remove_class(class_id: int, teacher: Teacher = Depends(require_teacher), db:
 
 # --- Attendance Marking & Audit Log Overwriting ---
 @router.post("/mark-attendance", status_code=200)
-def mark_attendance(body: AttendanceMarkRequest, user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+def mark_attendance(
+    body: AttendanceMarkRequest,
+    background_tasks: BackgroundTasks,
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     updated_students = set()
+    absent_student_ids = []
 
     for item in body.items:
         existing = db.query(Attendance).filter(
@@ -112,6 +143,8 @@ def mark_attendance(body: AttendanceMarkRequest, user: User = Depends(get_curren
         ).first()
 
         new_status_str = item.status.value if hasattr(item.status, 'value') else str(item.status)
+        if new_status_str == "absent":
+            absent_student_ids.append(item.student_id)
 
         if existing:
             old_status_str = existing.status.value if hasattr(existing.status, 'value') else str(existing.status)
@@ -160,6 +193,14 @@ def mark_attendance(body: AttendanceMarkRequest, user: User = Depends(get_curren
         updated_students.add(item.student_id)
 
     db.commit()
+
+    # Immediate backend email automation for absent students
+    if absent_student_ids:
+        try:
+            queue_immediate_absence_emails(db, user.id, body.subject_id, body.date, absent_student_ids)
+            background_tasks.add_task(_bg_process_email_queue)
+        except Exception as queue_err:
+            print(f"[IMMEDIATE EMAIL QUEUE ERROR] {queue_err}")
 
     # Trigger background AI analytics for updated students
     for s_id in updated_students:
