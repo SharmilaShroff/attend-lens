@@ -36,24 +36,21 @@
     },
     {
       "parameters": {
-        "resource": "message",
-        "operation": "send",
-        "sendTo": "={{ $json.body.to_email }}",
+        "fromEmail": "Attend Lens <dust53419@gmail.com>",
+        "toEmail": "={{ $json.body.to_email }}",
         "subject": "={{ $json.body.subject }}",
-        "messageType": "html",
-        "message": "={{ $json.body.html_body }}",
-        "options": {
-          "appendAttribution": false
-        }
+        "html": "={{ $json.body.html_body }}",
+        "text": "={{ $json.body.body }}",
+        "options": {}
       },
-      "type": "n8n-nodes-base.gmail",
+      "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
       "position": [
         700,
         300
       ],
-      "id": "node-send-gmail",
-      "name": "Send Gmail Notification"
+      "id": "node-send-email-smtp",
+      "name": "Send Email (SMTP / Gmail App Password)"
     }
   ],
   "connections": {
@@ -72,7 +69,7 @@
       "main": [
         [
           {
-            "node": "Send Gmail Notification",
+            "node": "Send Email (SMTP / Gmail App Password)",
             "type": "main",
             "index": 0
           }
