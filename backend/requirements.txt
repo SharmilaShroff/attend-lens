@@ -1,0 +1,17 @@
+fastapi==0.115.*
+uvicorn[standard]==0.32.*
+sqlalchemy==2.0.*
+pymysql==1.1.*
+cryptography
+pydantic==2.*
+pydantic-settings==2.*
+email-validator
+python-jose[cryptography]==3.3.*
+bcrypt==4.*
+python-multipart
+pandas==2.*
+numpy
+scikit-learn==1.5.*
+openpyxl
+apscheduler==3.10.*
+anthropic
