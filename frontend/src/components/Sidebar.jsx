@@ -51,15 +51,6 @@ export default function Sidebar({ activeTab, setActiveTab, role }) {
         })}
       </div>
 
-      <div className="p-4 rounded-2xl bg-gradient-to-br from-[#1e4d3b] to-[#2d6a4f] text-white text-xs">
-        <h4 className="font-bold mb-1">Hackathon Active Mode</h4>
-        <p className="text-[10px] text-white/80 leading-relaxed mb-2">
-          AI pattern detection & APScheduler 24h parent email escalation active.
-        </p>
-        <span className="inline-block bg-white/20 px-2 py-0.5 rounded-full text-[9px] font-bold">
-          Status: Operational
-        </span>
-      </div>
     </aside>
   );
 }

@@ -40,10 +40,10 @@ export default function AIChatbotWidget() {
       {!open ? (
         <button
           onClick={() => setOpen(true)}
-          className="flex items-center gap-2 bg-[#1e4d3b] text-white font-bold px-5 py-3.5 rounded-full shadow-2xl hover:bg-[#143628] transition-all transform hover:scale-105"
+          className="w-14 h-14 rounded-full bg-[#1e4d3b] text-white shadow-2xl flex items-center justify-center hover:bg-[#143628] hover:scale-105 transition-all duration-300 ring-4 ring-[#1e4d3b]/20"
+          title="Open AI Chatbot"
         >
-          <Bot className="w-5 h-5" />
-          <span>Ask Rollcall AI</span>
+          <Bot className="w-6 h-6 text-[#a3b899]" />
         </button>
       ) : (
         <div className="bg-white w-80 sm:w-96 h-[480px] rounded-3xl shadow-2xl border border-[#1e4d3b]/20 flex flex-col justify-between overflow-hidden">
