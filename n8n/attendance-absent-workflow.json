@@ -1,0 +1,257 @@
+{
+  "name": "Attend Lens – Absence Email Notifier",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "attendance-absent",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-1",
+      "name": "Webhook – Receive Attendance",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [200, 300],
+      "webhookId": "attendance-absent",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "1",
+          "name": "Webhook Secret"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "cond-1",
+              "leftValue": "={{ $json.body.absentees.length }}",
+              "rightValue": "0",
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "if-1",
+      "name": "IF – Has Absentees?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "body.absentees",
+        "include": "allOtherFields",
+        "options": {}
+      },
+      "id": "split-1",
+      "name": "Split Out – Each Absentee",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [680, 240]
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.body.absentees.student_email }}",
+        "subject": "=Absence Notice: {{ $json.body.subject.name }} on {{ $json.body.date }}",
+        "emailType": "html",
+        "message": "=<div style=\"font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background-color: #f4f8f5; border-radius: 16px;\">\n  <div style=\"background: #ffffff; padding: 28px; border-radius: 12px; border: 1px solid #1e4d3b20;\">\n    <h2 style=\"color: #1e4d3b; margin-top: 0;\">📋 Attendance Notice</h2>\n    <p style=\"font-size: 14px; color: #143628; line-height: 1.6;\">\n      Dear <strong>{{ $json.body.absentees.name }}</strong>,\n    </p>\n    <p style=\"font-size: 14px; color: #333; line-height: 1.6;\">\n      You were marked <strong style=\"color: #c62828;\">ABSENT</strong> for the following class:\n    </p>\n    <table style=\"width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px;\">\n      <tr style=\"background-color: #e8f5e9;\">\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">Subject</td>\n        <td style=\"padding: 10px;\">{{ $json.body.subject.name }} ({{ $json.body.subject.code }})</td>\n      </tr>\n      <tr>\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">Date</td>\n        <td style=\"padding: 10px;\">{{ $json.body.date }}</td>\n      </tr>\n      <tr style=\"background-color: #e8f5e9;\">\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">Period</td>\n        <td style=\"padding: 10px;\">{{ $json.body.period }}</td>\n      </tr>\n      <tr>\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">Marked by</td>\n        <td style=\"padding: 10px;\">{{ $json.body.teacher.name }}</td>\n      </tr>\n      <tr style=\"background-color: #e8f5e9;\">\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">USN</td>\n        <td style=\"padding: 10px;\">{{ $json.body.absentees.usn }}</td>\n      </tr>\n    </table>\n    <p style=\"font-size: 13px; color: #555; line-height: 1.5;\">\n      If this is an error, please contact your department or class mentor immediately.\n    </p>\n    <p style=\"font-size: 11px; color: #999; margin-top: 20px; text-align: center;\">Attend Lens — Academic Attendance System</p>\n  </div>\n</div>",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "gmail-student",
+      "name": "Gmail – Notify Student",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [920, 160],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "2",
+          "name": "Gmail Account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.body.absentees.parent_email }}",
+        "subject": "=Absence Notice for {{ $json.body.absentees.name }} ({{ $json.body.absentees.usn }}) – {{ $json.body.subject.name }}",
+        "emailType": "html",
+        "message": "=<div style=\"font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background-color: #f4f8f5; border-radius: 16px;\">\n  <div style=\"background: #ffffff; padding: 28px; border-radius: 12px; border: 1px solid #1e4d3b20;\">\n    <h2 style=\"color: #1e4d3b; margin-top: 0;\">📋 Parent / Guardian Attendance Notice</h2>\n    <p style=\"font-size: 14px; color: #143628; line-height: 1.6;\">\n      Dear Parent / Guardian,\n    </p>\n    <p style=\"font-size: 14px; color: #333; line-height: 1.6;\">\n      Your ward <strong>{{ $json.body.absentees.name }}</strong> ({{ $json.body.absentees.usn }}) was marked <strong style=\"color: #c62828;\">ABSENT</strong> for the following class:\n    </p>\n    <table style=\"width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px;\">\n      <tr style=\"background-color: #e8f5e9;\">\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">Subject</td>\n        <td style=\"padding: 10px;\">{{ $json.body.subject.name }} ({{ $json.body.subject.code }})</td>\n      </tr>\n      <tr>\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">Date</td>\n        <td style=\"padding: 10px;\">{{ $json.body.date }}</td>\n      </tr>\n      <tr style=\"background-color: #e8f5e9;\">\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">Period</td>\n        <td style=\"padding: 10px;\">{{ $json.body.period }}</td>\n      </tr>\n      <tr>\n        <td style=\"padding: 10px; font-weight: bold; color: #1e4d3b;\">Marked by</td>\n        <td style=\"padding: 10px;\">{{ $json.body.teacher.name }}</td>\n      </tr>\n    </table>\n    <p style=\"font-size: 13px; color: #555; line-height: 1.5;\">\n      If this is an error, please contact the department. Regular attendance above 75% is required for exam eligibility.\n    </p>\n    <p style=\"font-size: 11px; color: #999; margin-top: 20px; text-align: center;\">Attend Lens — Academic Attendance System</p>\n  </div>\n</div>",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "gmail-parent",
+      "name": "Gmail – Notify Parent",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [920, 360],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "2",
+          "name": "Gmail Account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "time": 1,
+        "unit": "seconds"
+      },
+      "id": "wait-1",
+      "name": "Wait – Rate Limit",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1160, 240]
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "id": "aggregate-1",
+      "name": "Aggregate – Collect Results",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [1400, 240]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={ \"sent\": {{ $json.data ? $json.data.length : 0 }}, \"status\": \"ok\" }",
+        "options": {}
+      },
+      "id": "respond-ok",
+      "name": "Respond – Success",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1640, 240]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={ \"sent\": 0, \"status\": \"no_absentees\" }",
+        "options": {}
+      },
+      "id": "respond-empty",
+      "name": "Respond – No Absentees",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [680, 440]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "cond-parent-email",
+              "leftValue": "={{ $json.body.absentees.parent_email }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "if-parent",
+      "name": "IF – Has Parent Email?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [920, 520]
+    }
+  ],
+  "connections": {
+    "Webhook – Receive Attendance": {
+      "main": [
+        [
+          { "node": "IF – Has Absentees?", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "IF – Has Absentees?": {
+      "main": [
+        [
+          { "node": "Split Out – Each Absentee", "type": "main", "index": 0 }
+        ],
+        [
+          { "node": "Respond – No Absentees", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Split Out – Each Absentee": {
+      "main": [
+        [
+          { "node": "Gmail – Notify Student", "type": "main", "index": 0 },
+          { "node": "IF – Has Parent Email?", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Gmail – Notify Student": {
+      "main": [
+        [
+          { "node": "Wait – Rate Limit", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "IF – Has Parent Email?": {
+      "main": [
+        [
+          { "node": "Gmail – Notify Parent", "type": "main", "index": 0 }
+        ],
+        []
+      ]
+    },
+    "Gmail – Notify Parent": {
+      "main": [
+        [
+          { "node": "Wait – Rate Limit", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Wait – Rate Limit": {
+      "main": [
+        [
+          { "node": "Aggregate – Collect Results", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Aggregate – Collect Results": {
+      "main": [
+        [
+          { "node": "Respond – Success", "type": "main", "index": 0 }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "instanceId": "attend-lens-absence-notifier"
+  }
+}

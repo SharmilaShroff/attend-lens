@@ -13,6 +13,7 @@ from app.schemas.all_schemas import (
 )
 from app.services.analytics import run_analytics_for_student
 from app.services.absence_followup import queue_immediate_absence_emails, process_email_queue
+from app.services.n8n_webhook import notify_absentees_via_n8n
 
 router = APIRouter(prefix="/teacher", tags=["teacher"])
 
@@ -23,6 +24,20 @@ def _bg_process_email_queue():
         process_email_queue(db)
     except Exception as e:
         print(f"[BG EMAIL QUEUE ERROR] {e}")
+    finally:
+        db.close()
+
+
+def _bg_notify_n8n(teacher_user_id: int, subject_id: int, attendance_date, period: int, absent_ids: list):
+    """Background task: POST absent students to n8n webhook (non-blocking)."""
+    db = SessionLocal()
+    try:
+        result = notify_absentees_via_n8n(
+            db, teacher_user_id, subject_id, attendance_date, period, absent_ids
+        )
+        print(f"[N8N BG TASK] {result}")
+    except Exception as e:
+        print(f"[N8N BG TASK ERROR] {e}")
     finally:
         db.close()
 
@@ -201,6 +216,12 @@ def mark_attendance(
             background_tasks.add_task(_bg_process_email_queue)
         except Exception as queue_err:
             print(f"[IMMEDIATE EMAIL QUEUE ERROR] {queue_err}")
+
+        # n8n webhook notification (non-blocking, runs in background)
+        background_tasks.add_task(
+            _bg_notify_n8n,
+            user.id, body.subject_id, body.date, body.period, absent_student_ids
+        )
 
     # Trigger background AI analytics for updated students
     for s_id in updated_students:

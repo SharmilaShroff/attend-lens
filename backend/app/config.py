@@ -33,6 +33,10 @@ class Settings(BaseSettings):
     EMAIL_FROM_NAME: str = "Attend Lens"
     N8N_WEBHOOK_URL: str = ""
 
+    # n8n Absence-Email Webhook (Part B integration)
+    N8N_ABSENCE_WEBHOOK_URL: str = ""
+    N8N_WEBHOOK_SECRET: str = ""
+
     EMAIL_AUTOMATION_ENABLED: bool = True
     EMAIL_DRY_RUN: bool = False
     FOLLOWUP_WAIT_HOURS: int = 24

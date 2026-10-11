@@ -377,3 +377,23 @@ class EmailQueue(Base):
 
 
 
+
+# ---------------------------------------------------------------- n8n notification de-duplication
+class N8nNotificationLog(Base):
+    """
+    Tracks which (student, subject, date, period) combos have already been
+    sent through the n8n absence-email webhook, preventing duplicate emails
+    when attendance is re-saved or edited.
+    """
+    __tablename__ = "n8n_notification_log"
+    __table_args__ = (
+        UniqueConstraint("student_id", "subject_id", "date", "period", name="uq_n8n_notif"),
+        Index("ix_n8n_notif_lookup", "subject_id", "date", "period"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    student_id: Mapped[int] = mapped_column(ForeignKey("students.id", ondelete="CASCADE"), index=True)
+    subject_id: Mapped[int] = mapped_column(ForeignKey("subjects.id", ondelete="CASCADE"), index=True)
+    date: Mapped[date] = mapped_column(Date, nullable=False)
+    period: Mapped[int] = mapped_column(Integer, nullable=False)
+    notified_at: Mapped[datetime] = _ts()
