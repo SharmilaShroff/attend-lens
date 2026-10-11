@@ -265,7 +265,8 @@ def generate_and_save_counselling_summary(db: Session, case_id: int) -> Optional
         "• Date(s) & Subject(s): [List dates/subjects from records/thread or 'No information found']\n"
         "• Reason Given: [State the student's explanation or 'No information found']\n"
         "• Guidance & Agreement: [Brief summary of counsellor advice and student response/commitment]\n"
-        "• Status: [Select one: 'Student committed to attend' | 'Needs mentor follow-up' | 'Distress flagged' | 'Awaiting student response']"
+        "• Status: [Select one: 'Student committed to attend' | 'Needs mentor follow-up' | 'Distress flagged' | 'Awaiting student response']\n"
+        "4. Grammar & Style: Ensure flawless English grammar, proper articles (e.g., 'the counsellor', 'the second period', 'a severe infection'), correct subject-verb agreement, and professional, polished phrasing."
     )
 
     summary_user_prompt = (

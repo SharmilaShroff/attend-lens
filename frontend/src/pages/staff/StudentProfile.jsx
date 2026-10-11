@@ -451,7 +451,7 @@ export default function StudentProfile() {
                         <span className="font-bold text-[#143628]">{rem.author_name || "Mentor"}</span>
                         <span>{new Date(rem.created_at).toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}</span>
                       </div>
-                      <p className="text-gray-800 leading-relaxed font-medium">{rem.text}</p>
+                      <p className="text-gray-800 leading-relaxed font-medium whitespace-pre-line">{rem.text}</p>
                     </div>
                   ))
                 )}

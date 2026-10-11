@@ -138,7 +138,7 @@ export default function StudentRemarksHistory() {
                       <span>{new Date(rem.created_at).toLocaleString([], { month: "short", day: "numeric", year: "numeric", hour: "2-digit", minute: "2-digit" })}</span>
                     </div>
                   </div>
-                  <p className="text-xs text-gray-800 leading-relaxed font-medium pt-1">{rem.text}</p>
+                  <p className="text-xs text-gray-800 leading-relaxed font-medium pt-1 whitespace-pre-line">{rem.text}</p>
                 </div>
               ))}
             </div>
