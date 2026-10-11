@@ -1,5 +1,5 @@
 -- Attend Lens MySQL Database Dump
--- Exported on 2026-10-11 03:45:01
+-- Exported on 2026-10-11 06:37:49
 
 CREATE DATABASE IF NOT EXISTS attendlens_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE attendlens_db;
